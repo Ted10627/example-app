@@ -2,13 +2,12 @@
 import { reactive, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 
-// const props = defineProps({
-//   guideName: {
-//     type: String,
-//     default: 'default',
-//   },
-// });
-
+const props = defineProps({
+  guideName: {
+    type: String,
+    default: 'default',
+  },
+});
 const guide = reactive({
   card1: {
     img: '/image/guide-1.png',
@@ -55,6 +54,7 @@ const guide = reactive({
     to3: '/',
   },
 });
+const currentGuide = guide[props.guideName] || guide.default;
 const hover1 = ref(false);
 const hover2 = ref(false);
 const hover3 = ref(false);
@@ -72,14 +72,14 @@ const hover3 = ref(false);
       >
         <div>
           <div class="text-xl lg:text-2xl font-bold">
-            {{ guide[guideName]?.title || '標題' }}
+            {{ currentGuide?.title || '標題' }}
           </div>
           <div class="text-sm lg:text-lg text-[#5d5d5d]">
-            {{ guide[guideName]?.smtitle || '副標題' }}
+            {{ currentGuide?.smtitle || '副標題' }}
           </div>
         </div>
         <div class="mt-3 text-sm lg:text-lg">
-          <RouterLink :to="guide[guideName]?.to1 || '/'">
+          <RouterLink :to="currentGuide?.to1 || '/'">
             <div
               class="flex items-center text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover1 = true"
@@ -88,7 +88,7 @@ const hover3 = ref(false);
               @blur="hover1 = false"
               tabindex="0"
             >
-              {{ guide[guideName]?.content1 || '內容1' }}
+              {{ currentGuide?.content1 || '內容1' }}
               <img
                 class="flex ml-2 w-[20px] h-[20px]"
                 :src="
@@ -100,7 +100,7 @@ const hover3 = ref(false);
               />
             </div>
           </RouterLink>
-          <RouterLink :to="guide[guideName]?.to2 || '/'">
+          <RouterLink :to="currentGuide?.to2 || '/'">
             <div
               class="flex items-center mt-3 text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover2 = true"
@@ -109,7 +109,7 @@ const hover3 = ref(false);
               @blur="hover2 = false"
               tabindex="0"
             >
-              {{ guide[guideName]?.content2 || '內容2' }}
+              {{ currentGuide?.content2 || '內容2' }}
               <img
                 class="flex ml-2 w-[20px] h-[20px]"
                 :src="
@@ -121,7 +121,7 @@ const hover3 = ref(false);
               />
             </div>
           </RouterLink>
-          <RouterLink :to="guide[guideName]?.to3 || '/'">
+          <RouterLink :to="currentGuide?.to3 || '/'">
             <div
               class="flex items-center mt-3 text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover3 = true"
@@ -130,7 +130,7 @@ const hover3 = ref(false);
               @blur="hover3 = false"
               tabindex="0"
             >
-              {{ guide[guideName]?.content3 || '內容3' }}
+              {{ currentGuide?.content3 || '內容3' }}
               <img
                 class="flex ml-2 w-[20px] h-[20px]"
                 :src="
@@ -147,7 +147,7 @@ const hover3 = ref(false);
     </div>
     <img
       class="w-[226px] h-[320px] lg:w-[350px] lg:h-[400px]"
-      :src="guide[guideName]?.img || '沒有圖'"
+      :src="currentGuide?.img || '沒有圖'"
       alt=""
     />
   </div>
