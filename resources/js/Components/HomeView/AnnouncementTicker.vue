@@ -17,40 +17,46 @@ const currentMessage = computed(() => messages.value[currentIndex.value]);
 onMounted(async () => {
   await nextTick(); // 確保 DOM 渲染完成
 
-  // 計算顯示區域的寬度
-  const containerWidth = marqueeContent.value.parentElement.offsetWidth;
+  const tickerElement = marqueeContent.value;
 
-  const animateMessage = () => {
-    const messageWidth = marqueeContent.value.scrollWidth; // 使用 scrollWidth 來獲取內容實際寬度
+  if (tickerElement) { // 檢查元素是否存在
+    // 計算顯示區域的寬度
+    const containerWidth = tickerElement.parentElement.offsetWidth;
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        currentIndex.value =
-                    (currentIndex.value + 1) % messages.value.length;
-        animateMessage(); // 遞歸調用以處理下一則公告
-      },
-    });
+    const animateMessage = () => {
+      const messageWidth = tickerElement.scrollWidth; // 使用 scrollWidth 來獲取內容實際寬度
 
-    tl.set(marqueeContent.value, { x: containerWidth }); // 初始位置在顯示區域之外
-
-    tl.to(marqueeContent.value, {
-      x: 0, // 從右側移入到顯示區域
-      duration: 3, // 設置移入持續時間
-      ease: 'none',
-    })
-      .to(
-        {},
-        { duration: 3 }, // 停頓3秒
-      )
-      .to(marqueeContent.value, {
-        x: -messageWidth, // 完整退出顯示區域
-        duration: 3, // 設置移動持續時間
-        ease: 'none',
+      const tl = gsap.timeline({
+        onComplete: () => {
+          currentIndex.value =
+            (currentIndex.value + 1) % messages.value.length;
+          animateMessage(); // 遞歸調用以處理下一則公告
+        },
       });
-  };
 
-  // 開始動畫，從第一則公告開始
-  animateMessage();
+      tl.set(tickerElement, { x: containerWidth }); // 初始位置在顯示區域之外
+
+      tl.to(tickerElement, {
+        x: 0, // 從右側移入到顯示區域
+        duration: 3, // 設置移入持續時間
+        ease: 'none',
+      })
+        .to(
+          {},
+          { duration: 3 }, // 停頓3秒
+        )
+        .to(tickerElement, {
+          x: -messageWidth, // 完整退出顯示區域
+          duration: 3, // 設置移動持續時間
+          ease: 'none',
+        });
+    };
+
+    // 開始動畫，從第一則公告開始
+    animateMessage();
+  } else {
+    // console.error('Marquee content element not found');
+  }
 });
 </script>
 
@@ -70,7 +76,6 @@ onMounted(async () => {
         />
         公告資訊
       </div>
-      <!-- 下是公告資訊下的空間 -->
       <div
         class="flex justify-center items-center w-full max-w-[120px] md:max-w-[160px] lg:max-w-[220px] lg:max-w/[220px] announcement-title"
       >

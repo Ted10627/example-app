@@ -41,11 +41,11 @@
             </td>
             <td class="text-center">
               <div class="flex justify-center gap-2 py-3 border-b-2">
-                <img src="/public/image/airline/Rectangle 54.png" alt="">
+                <img src="/image/airline/Rectangle 54.png" alt="">
                 <p>華信航空</p>
               </div>
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54-2.png" alt="">
+                <img src="/image/airline/Rectangle 54-2.png" alt="">
                 <p>立榮航空</p>
               </div>
             </td>
@@ -77,11 +77,11 @@
             </td>
             <td class="text-center">
               <div class="flex justify-center gap-2 py-3 border-b-2">
-                <img src="/public/image/airline/Rectangle 54.png" alt="">
+                <img src="/image/airline/Rectangle 54.png" alt="">
                 <p>華信航空</p>
               </div>
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54-2.png" alt="">
+                <img src="/image/airline/Rectangle 54-2.png" alt="">
                 <p>立榮航空</p>
               </div>
             </td>
@@ -113,7 +113,7 @@
             </td>
             <td class="text-center">
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54-2.png" alt="">
+                <img src="/image/airline/Rectangle 54-2.png" alt="">
                 <p>立榮航空</p>
               </div>
             </td>
@@ -154,7 +154,7 @@
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54.png" alt="">
+                <img src="/image/airline/Rectangle 54.png" alt="">
                 <p>華信航空</p>
               </div>
             </td>
@@ -204,7 +204,7 @@
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54-2.png" alt="">
+                <img src="/image/airline/Rectangle 54-2.png" alt="">
                 <p>立榮航空</p>
               </div>
             </td>
@@ -263,7 +263,7 @@
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54.png" alt="">
+                <img src="/image/airline/Rectangle 54.png" alt="">
                 <p>華信航空</p>
               </div>
             </td>
@@ -313,7 +313,7 @@
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54-2.png" alt="">
+                <img src="/image/airline/Rectangle 54-2.png" alt="">
                 <p>立榮航空</p>
               </div>
             </td>
@@ -372,7 +372,7 @@
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
-                <img src="/public/image/airline/Rectangle 54-2.png" alt="">
+                <img src="/image/airline/Rectangle 54-2.png" alt="">
                 <p>立榮航空</p>
               </div>
             </td>
@@ -425,7 +425,7 @@
 
 <style>
 .banner-service{
-  background-image: url(/public/image/banner-flight.png);
+  background-image: url(/image/banner-flight.png);
 }
 .air-dark-blue{
   background-color: #343557;

@@ -56,7 +56,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
           </div>
         </div>
       </div>
-      <div class="w-full text-sm lg:text-xl">文章最後更新日期：2024-06-14</div>
     </div>
   </div>
 </template>

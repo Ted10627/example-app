@@ -73,7 +73,6 @@ function hideImage() {
           </p>
         </div>
       </div>
-      <div class="w-full text-sm lg:text-xl">文章最後更新日期：2024-04-26</div>
     </div>
   </div>
   <div

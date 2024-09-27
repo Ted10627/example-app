@@ -4,7 +4,5 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return Inertia::render('Frontend/App', [
-        'response' => rtFormat([100, 200, 300]),
-    ]);
-});
+    return Inertia::render('Frontend/HomeView');
+})->name('home');

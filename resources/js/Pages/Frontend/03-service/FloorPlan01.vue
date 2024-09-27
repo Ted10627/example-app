@@ -59,7 +59,6 @@ function changeImage(imagePath, floor) {
         </button>
       </div>
       <img class="airportmap" :src="currentImage" alt="airportmap" @click="showImage" @keydown.enter="showImage">
-      <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2023-11-10</div>
     </div>
   </div>
   <div v-if="imageVisible" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" @click="hideImage" @keydown.enter="hideImage">

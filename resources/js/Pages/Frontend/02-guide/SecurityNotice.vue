@@ -69,7 +69,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         <li><a href="#" class="text-sm lg:text-xl hover:underline">鋰電池上機規定</a></li>
         <li><a href="#" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施問答集(點選開啟相關檔案)</a></li>
       </ol>
-      <div class="w-full text-sm lg:text-xl">文章最後更新日期：2024-04-26</div>
     </div>
   </div>
 </template>

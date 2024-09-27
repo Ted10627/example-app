@@ -157,7 +157,6 @@
           </p>
         </div>
       </div>
-      <div class="w-full text-sm lg:text-xl">文章最後更新日期：2023-10-03</div>
     </div>
   </div>
 </template>

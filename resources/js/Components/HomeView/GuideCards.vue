@@ -18,7 +18,7 @@ const guide = reactive({
     content3: '出境流程',
     to1: '/check-in',
     to2: '/check-in',
-    to3: '/flight-process/exit',
+    to3: '/',
   },
   card2: {
     img: '/image/guide-2.png',
@@ -27,7 +27,7 @@ const guide = reactive({
     content1: '入境流程',
     content2: '來往兩岸港澳地區須知',
     content3: '如何離開機場',
-    to1: '/flight-process/entry',
+    to1: '/',
     to2: '/',
     to3: '/bus-information',
   },

@@ -33,7 +33,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         <p class="text-xl lg:text-3xl font-bold text-[#471C87]">> 離島居民補貼額度如下：</p>
         <img src="/image/concession-ticket-form02.png" alt="票價優惠說明-離島居民補貼額度表格" />
       </div>
-      <div class="w-full text-sm lg:text-xl">文章最後更新日期：2023-10-03</div>
     </div>
   </div>
 </template>
