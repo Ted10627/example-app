@@ -13,10 +13,10 @@ import announcementCarousel from '@/Components/HomeView/AnnouncementCarousel.vue
 import announcementTicker from '@/Components/HomeView/AnnouncementTicker.vue';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import liveFlightSchedule from '@/Components/HomeView/LiveFlightSchedule.vue';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const planeRef = ref(null);
 
@@ -37,16 +37,16 @@ onMounted(() => {
     },
     repeat: -1,
     ease: 'linear',
-  }),
-  // 設置 ScrollTrigger
-
-  ScrollTrigger.create({
-    trigger: '#flight-guide',
-    start: 'top top',
-    end: '+=500px',
-    pinSpacing: false,
-    pin: true,
   });
+  // 設置 ScrollTrigger，動差設定
+
+  // ScrollTrigger.create({
+  //   trigger: '#flight-guide',
+  //   start: 'top top',
+  //   end: '+=500px',
+  //   pinSpacing: false,
+  //   pin: true,
+  // });
 });
 
 // 天氣描述

@@ -23,6 +23,6 @@ export default {};
 
 #header,
 #footer {
-    @apply h-[21px] bg-[#00bd89];
+    @apply h-[0px] bg-[#00bd89];
 }
 </style>

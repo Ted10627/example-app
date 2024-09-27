@@ -33,6 +33,7 @@ onUnmounted(() => {
 <template>
   <div class="min-h-screen flex flex-col justify-between items-center w-full">
     <header class="flex justify-center items-center bg-white w-full h-16 md:h-[100px] lg:h-[165px]">
+      <!-- 回首頁按鈕 -->
       <div
         ref="goTopButton"
         class="fixed z-30 bottom-4 right-4 hidden transform scale-0 transition-transform duration-300"
@@ -55,7 +56,7 @@ onUnmounted(() => {
           >
             <img src="/logo.png" alt="Flowbite Logo" />
           </RouterLink>
-          <div class="lg:mr-2 h-full items-center lg:pt-[30px]">
+          <div class="lg:mr-2  h-full items-center lg:pt-[30px]">
             <nav class="h-[40px] justify-end items-center hidden lg:block">
               <ul
                 class="flex flex-col justify-end font-medium mr-2 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-[20px] rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
