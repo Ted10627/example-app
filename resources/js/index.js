@@ -103,13 +103,8 @@ const router = createRouter({
     // 機場服務
     {
       path: '/floor-plan',
-      children: [
-        {
-          path: '1f',
-          name: 'floor-plan-1f',
-          component: () => import('./Pages/Frontend/03-service/FloorPlan01.vue'),
-        },
-      ],
+      name: 'floor-plan-1f',
+      component: () => import('./Pages/Frontend/03-service/FloorPlan01.vue'),
     },
     {
       path: '/service-facilities',

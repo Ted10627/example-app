@@ -20,9 +20,9 @@ function switchTab(tab) {
     <div class="w-full max-w-[1260px] m-auto py-10">
       <!-- 麵包屑 -->
       <div class="text-sm lg:text-xl">
-        <RouterLink to="/" class="hover:underline">首頁</RouterLink>
+        <Link href="/" class="hover:underline">首頁</Link>
         <span> > </span>
-        <RouterLink to="" class="hover:underline">搭機指南</RouterLink>
+        <Link href="" class="hover:underline">搭機指南</Link>
         <span> > </span>
         <span v-if="currentTab === 'exit'">國際線搭機流程(出境)</span>
         <span v-else>國際線搭機流程(入境)</span>

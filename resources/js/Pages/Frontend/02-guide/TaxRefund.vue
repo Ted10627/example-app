@@ -24,11 +24,11 @@ function hideImage() {
   <div class="px-5">
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-8 m-auto py-10">
       <div class="text-sm lg:text-xl">
-        <RouterLink to="/" class="hover:underline">首頁</RouterLink>
+        <Link href="/" class="hover:underline">首頁</Link>
         <span> > </span>
-        <RouterLink to="" class="hover:underline">搭機指南</RouterLink>
+        <Link href="" class="hover:underline">搭機指南</Link>
         <span> > </span>
-        <RouterLink to="" class="hover:underline">外國旅客購物退稅須知</RouterLink>
+        <Link href="" class="hover:underline">外國旅客購物退稅須知</Link>
       </div>
       <mainTitle>
         <template #title>外國旅客購物退稅須知</template>
