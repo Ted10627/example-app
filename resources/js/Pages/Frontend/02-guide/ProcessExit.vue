@@ -31,11 +31,11 @@ function switchTab(tab) {
       <!-- 出境/入境按鈕 -->
       <div class="flex my-5 lg:my-10">
         <button type="button" @click="switchTab('exit')" :class="['flex-1 rounded-l-[40px] shadow-xl p-2 lg:p-5 text-xl lg:text-3xl text-center',
-                                                                  currentTab === 'exit' ? 'air-purple text-white' : 'white text-air-purple']">
+                                                                  currentTab === 'exit' ? 'bg-air-purple text-white' : 'white text-air-purple']">
           出境
         </button>
         <button type="button" @click="switchTab('entry')" :class="['flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 text-xl lg:text-3xl text-center',
-                                                                   currentTab === 'entry' ? 'air-purple text-white' : 'white text-air-purple']">
+                                                                   currentTab === 'entry' ? 'bg-air-purple text-white' : 'white text-air-purple']">
           入境
         </button>
       </div>
@@ -93,7 +93,6 @@ function switchTab(tab) {
           </div>
         </div>
       </div>
-      <div class="w-full text-sm lg:text-xl">文章最後更新日期：2024-06-14</div>
     </div>
 
   </div>

@@ -15,7 +15,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <div class="w-full flex flex-col gap-5 lg:gap-12">
         <img src="/public/image/bus-information.png" alt="公車位置圖" />
         <div class="flex items-center flex-wrap">
-          <p class="content-text">即時公車動態資訊參考網頁</p>
+          <p class="text-2xl">即時公車動態資訊參考網頁</p>
           <img class="mr-5" width="20" src="/public/icon/black-park-right.png" alt="icon" />
           <a href="https://citybus.taichung.gov.tw/" target="_blank">
             <img class="w-[160px] lg:w-[280px]" src="/public/image/TaichungBus.png" alt="image">
@@ -273,8 +273,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         </div>
       </div>
     </div>
-
-    <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2024-06-14</div>
   </div>
 </template>
 

@@ -10,12 +10,12 @@ const props = defineProps({
 const traffic = ref({
   state1: {
     name: '國內航廈北側(室外)',
-    color: 'warning-green',
+    color: 'bg-warning-green',
     out: '空曠',
   },
   state2: {
     name: '國際航廈B1',
-    color: 'warning-red',
+    color: 'bg-warning-red',
     out: '擁擠',
   },
   default: {
@@ -38,7 +38,7 @@ const hover = ref(false);
     </div>
     <div class="flex justify-end items-center">
       <div
-        class="flex justify-center items-center w-[120px] h-[38px] content-text-white rounded-[4px] mr-3"
+        class="flex justify-center items-center w-[120px] h-[38px] text-2xl text-white rounded-[4px] mr-3"
         :class="[traffic[props.trafficName].color]"
       >
         {{ traffic[props.trafficName].out }}

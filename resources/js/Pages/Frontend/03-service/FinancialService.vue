@@ -36,17 +36,17 @@ function hideImage() {
           <ol class="flex flex-col gap-2 text-base lg:text-2xl">
             <li class="flex items-center">
               <img class="w-6 h-6 me-3" src="/icon/foot-map-pin.png" alt="" />
-              <p class="content-text-bolded">國際線一樓出境大廳</p>&nbsp;
+              <p class="font-medium text-2xl text-air-blue">國際線一樓出境大廳</p>&nbsp;
               <p>06:00~23:00</p>
             </li>
             <li class="flex items-center">
               <img class="w-6 h-6 me-3" src="/icon/foot-map-pin.png" alt="" />
-              <p class="content-text-bolded">入境行李提領區</p>&nbsp;
+              <p class="font-medium text-2xl text-air-blue">入境行李提領區</p>&nbsp;
               <p>09:00~17:00(配合入境班次調整服務時間)</p>
             </li>
             <li class="flex items-center">
               <img class="w-6 h-6 me-3" src="/icon/foot-map-pin.png" alt="" />
-              <p class="content-text-bolded">國內線大廳</p>&nbsp;
+              <p class="font-medium text-2xl text-air-blue">國內線大廳</p>&nbsp;
               <p>09:00~17:00</p>
             </li>
           </ol>
@@ -95,13 +95,6 @@ function hideImage() {
           </div>
         </div>
       </section>
-      <!-- <section class="w-full flex flex-col gap-5">
-        <div class="flex items-center justify-center">
-          <p class="content-text-black mr-[10px]">旅客諮詢櫃檯位置圖</p>
-          <img class="w-[30px] h-[30px]" src="/icon/park-down.png" alt="" />
-        </div>
-        <img @click.prevent="showImage" src="/image/information.map.png" alt="" />
-      </section> -->
     </div>
   </div>
   <!-- 點擊彈出導覽圖 -->

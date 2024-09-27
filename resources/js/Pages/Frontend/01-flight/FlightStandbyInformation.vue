@@ -12,29 +12,29 @@
         <thead class="w-full">
           <tr class="air-dark-blue h-[80px]">
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">目的地</div>
+              <div class="flex justify-center border-r-2 text-white">目的地</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">航空公司</div>
+              <div class="flex justify-center border-r-2 text-white">航空公司</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">目前叫號</div>
+              <div class="flex justify-center border-r-2 text-white">目前叫號</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">登記候補人數</div>
+              <div class="flex justify-center border-r-2 text-white">登記候補人數</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">後續班次數</div>
+              <div class="flex justify-center border-r-2 text-white">後續班次數</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">現場等待人數</div>
+              <div class="flex justify-center border-r-2 text-white">現場等待人數</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center content-text-white">補上人數</div>
+              <div class="flex justify-center text-white">補上人數</div>
             </th>
           </tr>
         </thead>
-        <tbody class="bg-white content-text">
+        <tbody class="bg-white text-2xl">
           <tr class="shadow-lg">
             <td class="text-center">
               金門 30º
@@ -66,7 +66,7 @@
             </td>
             <td class="text-center justify-items-center">
               <p>9</p>
-              <div class="small-text grid justify-items-center">
+              <div class="text-base grid justify-items-center">
                 <p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white">補上明細</p>
               </div>
             </td>
@@ -102,7 +102,7 @@
             </td>
             <td class="text-center justify-items-center">
               <p>1</p>
-              <div class="small-text grid justify-items-center">
+              <div class="text-base grid justify-items-center">
                 <p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white">補上明細</p>
               </div>
             </td>
@@ -135,7 +135,7 @@
             </td>
             <td class="text-center justify-items-center">
               <p>0</p>
-              <div class="small-text grid justify-items-center">
+              <div class="text-base grid justify-items-center">
                 <p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white">補上明細</p>
               </div>
             </td>
@@ -146,11 +146,11 @@
         <thead class="w-full">
           <tr class="air-dark-blue h-[60px]">
             <th class="text-center" colspan="3">
-              <div class="flex justify-center content-text-white">金門 30º</div>
+              <div class="flex justify-center text-white">金門 30º</div>
             </th>
           </tr>
         </thead>
-        <tbody class="bg-white content-text border-b-4">
+        <tbody class="bg-white text-2xl border-b-4">
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
@@ -196,11 +196,11 @@
           <tr>
             <td class="text-center bg-light-purple flex justify-center gap-7 py-3" colspan="3">
               <div><p>補上人數&nbsp;:&nbsp;8</p></div>
-              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white small-text">補上明細</p></div>
+              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white text-base">補上明細</p></div>
             </td>
           </tr>
         </tbody>
-        <tbody class="bg-white content-text shadow-lg z-10">
+        <tbody class="bg-white text-2xl shadow-lg z-10">
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
@@ -246,7 +246,7 @@
           <tr>
             <td class="text-center bg-light-purple flex justify-center gap-7 py-3" colspan="3">
               <div><p>補上人數&nbsp;:&nbsp;1</p></div>
-              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white small-text">補上明細</p></div>
+              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white text-base">補上明細</p></div>
             </td>
           </tr>
         </tbody>
@@ -255,11 +255,11 @@
         <thead class="w-full">
           <tr class="air-dark-blue h-[60px]">
             <th class="text-center" colspan="3">
-              <div class="flex justify-center content-text-white">澎湖 30º</div>
+              <div class="flex justify-center text-white">澎湖 30º</div>
             </th>
           </tr>
         </thead>
-        <tbody class="bg-white content-text border-b-4">
+        <tbody class="bg-white text-2xl border-b-4">
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
@@ -305,11 +305,11 @@
           <tr>
             <td class="text-center bg-light-purple flex justify-center gap-7 py-3" colspan="3">
               <div><p>補上人數&nbsp;:&nbsp;1</p></div>
-              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white small-text">補上明細</p></div>
+              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white text-base">補上明細</p></div>
             </td>
           </tr>
         </tbody>
-        <tbody class="bg-white content-text shadow-lg z-10">
+        <tbody class="bg-white text-2xl shadow-lg z-10">
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
@@ -355,7 +355,7 @@
           <tr>
             <td class="text-center bg-light-purple flex justify-center gap-7 py-3" colspan="3">
               <div><p>補上人數&nbsp;:&nbsp;1</p></div>
-              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white small-text">補上明細</p></div>
+              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white text-base">補上明細</p></div>
             </td>
           </tr>
         </tbody>
@@ -364,11 +364,11 @@
         <thead class="w-full">
           <tr class="air-dark-blue h-[60px]">
             <th class="text-center" colspan="3">
-              <div class="flex justify-center content-text-white">南竿 29º</div>
+              <div class="flex justify-center text-white">南竿 29º</div>
             </th>
           </tr>
         </thead>
-        <tbody class="bg-white content-text shadow-lg z-10">
+        <tbody class="bg-white text-2xl shadow-lg z-10">
           <tr>
             <td class="text-center" colspan="3">
               <div class="flex justify-center gap-2 py-3">
@@ -414,7 +414,7 @@
           <tr>
             <td class="text-center bg-light-purple flex justify-center gap-7 py-3" colspan="3">
               <div><p>補上人數&nbsp;:&nbsp;0</p></div>
-              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white small-text">補上明細</p></div>
+              <div><p class="bg-sky-400 rounded w-[70px] py-1 mt-1 text-white text-base">補上明細</p></div>
             </td>
           </tr>
         </tbody>

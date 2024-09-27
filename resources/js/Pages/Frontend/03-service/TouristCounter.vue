@@ -58,7 +58,7 @@ function hideImage() {
       </section>
       <section class="w-full flex flex-col gap-5">
         <div class="flex items-center justify-center">
-          <p class="content-text-black mr-[10px]">旅遊服務中心</p>
+          <p class="text-black mr-[10px]">旅遊服務中心</p>
           <img class="w-[30px] h-[30px]" src="/icon/park-down.png" alt="" />
         </div>
         <img @click.prevent="showImage" @keydown.enter="showImage" src="/image/travel-map.png" alt="旅遊服務中心櫃檯位置圖" />

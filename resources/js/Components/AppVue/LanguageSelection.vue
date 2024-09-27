@@ -36,7 +36,7 @@ onUnmounted(() => {
       to=""
     >
       <img src="/icon/nav-earth-48-filled.png" class="mr-[5px]" alt="icon" />
-      <div class="notes-bolded">Language</div>
+      <div class="text-xl font-medium text-air-blue">Language</div>
       <img src="/icon/park-down.png" alt="" class="w-[22px] h-[22px]" />
     </RouterLink>
     <ul v-if="isOpen" class="absolute top-6 left-0 w-full mt-2 bg-white shadow-lg dropdown-list">

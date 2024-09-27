@@ -34,27 +34,27 @@ function changeImage(imagePath, floor) {
       <div class="flex w-full">
         <button @click="changeImage('/image/floor-plan-1f.png', '1F')" type="button"
           :class="['flex-1 rounded-l-[40px] shadow-xl p-2 lg:p-5 text-xs md:text-base lg:text-2xl text-center',
-                   selectedFloor === '1F' ? 'air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
+                   selectedFloor === '1F' ? 'bg-air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
           1F
         </button>
         <button @click="changeImage('/image/floor-plan-2f.png', '2F')" type="button"
           :class="['flex-1 shadow-xl p-2 lg:p-5 text-xs md:text-base lg:text-2xl text-center',
-                   selectedFloor === '2F' ? 'air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
+                   selectedFloor === '2F' ? 'bg-air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
           2F
         </button>
         <button @click="changeImage('/image/floor-plan-3f.png', '3F')" type="button"
           :class="['flex-1 shadow-xl p-2 lg:p-5 text-xs md:text-base lg:text-2xl text-center',
-                   selectedFloor === '3F' ? 'air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
+                   selectedFloor === '3F' ? 'bg-air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
           3F
         </button>
         <button @click="changeImage('/image/floor-plan-4f.png', '4F')" type="button"
           :class="['flex-1 shadow-xl p-2 lg:p-5 text-xs md:text-base lg:text-2xl text-center',
-                   selectedFloor === '4F' ? 'air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
+                   selectedFloor === '4F' ? 'bg-air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
           4F
         </button>
         <button @click="changeImage('/image/floor-plan-b1.png', 'B1')" type="button"
           :class="['flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 text-xs md:text-base lg:text-2xl text-center',
-                   selectedFloor === 'B1' ? 'air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
+                   selectedFloor === 'B1' ? 'bg-air-purple text-white' : 'white text-[#471C87] hover:bg-[#471C87] hover:text-white']">
           B1
         </button>
       </div>

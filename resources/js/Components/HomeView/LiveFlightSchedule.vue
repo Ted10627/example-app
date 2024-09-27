@@ -214,10 +214,10 @@ const hoverSearch = ref(false);
         @click="setCategory('international')"
         :class="[
           category === 'international'
-            ? 'airportMainColor'
-            : 'airportAuxiliaryColor',
+            ? 'text-white bg-air-purple'
+            : 'text-black bg-light-purple',
         ]"
-        class="mr-[5px] lg:mr-0 airportMainColor-hover transition-all duration-300 shadow-md rounded-tl-my w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
+        class="mr-[5px] lg:mr-0 hover:text-white hover:bg-air-purple transition-all duration-300 shadow-md rounded-tl-my w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
       >
         國際及兩岸航線
       </button>
@@ -227,10 +227,10 @@ const hoverSearch = ref(false);
         @click="setCategory('domestic')"
         :class="[
           category === 'domestic'
-            ? 'airportMainColor'
-            : 'airportAuxiliaryColor',
+            ? 'text-white bg-air-purple'
+            : 'text-black bg-light-purple',
         ]"
-        class="airportMainColor-hover transition-all duration-300 shadow-md rounded-tr-my w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
+        class="hover:text-white hover:bg-air-purple transition-all duration-300 shadow-md rounded-tr-my w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
       >
         國內航線
       </button>
@@ -245,8 +245,8 @@ const hoverSearch = ref(false);
       <button
         type="button"
         @click="setType('Arrival')"
-        :class="[nowType === 'Arrival' ? 'airportMainColor' : 'bg-white']"
-        class="mr-[5px] lg:mr-0 airportMainColor-hover transition-all duration-300 w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
+        :class="[nowType === 'Arrival' ? 'text-white bg-air-purple' : 'bg-white']"
+        class="mr-[5px] lg:mr-0 hover:text-white hover:bg-air-purple transition-all duration-300 w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
         @mouseover="hoverArrival = true"
         @mouseleave="hoverArrival = false"
         @focus="hoverArrival = true"
@@ -272,8 +272,8 @@ const hoverSearch = ref(false);
       <button
         type="button"
         @click="setType('Departure')"
-        :class="[nowType === 'Departure' ? 'airportMainColor' : 'bg-white']"
-        class="airportMainColor-hover duration-300 w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
+        :class="[nowType === 'Departure' ? 'text-white bg-air-purple' : 'bg-white']"
+        class="hover:text-white hover:bg-air-purple duration-300 w-full lg:w-[290px] h-[40px] sm:h-[65px] lg:h-[110px]"
         @mouseover="hoverDeparture = true"
         @mouseleave="hoverDeparture = false"
         @focus="hoverDeparture = true"
@@ -336,7 +336,7 @@ const hoverSearch = ref(false);
       </div>
       <button
         type="button"
-        class="flex w-[30%] justify-center items-center active:bg-[#f59801] airportMainColor"
+        class="flex w-[30%] justify-center items-center active:bg-[#f59801] text-white bg-air-purple"
         @click="searchFlights"
         @keydown.enter="searchFlights"
         @keydown.space.prevent="searchFlights"
@@ -356,7 +356,7 @@ const hoverSearch = ref(false);
           <div class="absolute top-0 left-0 w-full h-full">
             <table class="w-full">
               <thead class="h-[65px] bg-[#343557]">
-                <tr class="airportAuxiliaryColor-2">
+                <tr class="text-white bg-air-blue">
                   <th class="text-center h-[50px] lg:h-[80px] lg:w-[25%]">
                     <div class="flex justify-center items-center border-r-2">
                       時間
@@ -388,7 +388,7 @@ const hoverSearch = ref(false);
               </thead>
             </table>
           </div>
-          <tr class="airportAuxiliaryColor-2">
+          <tr class="text-white bg-air-blue">
             <th class="text-center h-[50px] lg:h-[80px] lg:w-[25%]">
               <div class="flex justify-center items-center border-r-2">
                 時間
@@ -420,7 +420,7 @@ const hoverSearch = ref(false);
         </thead>
         <tbody class="bg-white">
           <tr v-if="filterFlights.length === 0">
-            <td colspan="5" class="text-center md:subtitle py-4 bg-slate-200">
+            <td colspan="5" class="text-center md:text-3xl py-4 bg-slate-200">
               查無資料
             </td>
           </tr>
@@ -501,7 +501,7 @@ const hoverSearch = ref(false);
         </tbody>
       </table>
       <div
-        class="flex justify-center items-center shadow-md background-light-gray lg:bg-white lg:bg-opacity-60 h-[40px] sm:h-[60px] lg:h-[80px]"
+        class="flex justify-center items-center shadow-md bg-light-gray lg:bg-white lg:bg-opacity-60 h-[40px] sm:h-[60px] lg:h-[80px]"
       >
         <RouterLink
           :to="flightLink"

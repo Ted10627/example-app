@@ -110,7 +110,7 @@ const button = ref({
         class="button-item max-w-[28px] mr-3"
         alt="icon"
       />
-      <div class="content-text button-item">
+      <div class="text-2xl button-item">
         {{ button[props.buttonName].name }}
       </div>
     </button>

@@ -33,7 +33,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         </RouterLink>
         <RouterLink
           :to="{ name: 'accessible-passengers' }"
-          class="w-full xl:rounded-r-[40px] shadow-xl p-2 lg:p-5 air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
+          class="w-full xl:rounded-r-[40px] shadow-xl p-2 lg:p-5 bg-air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
         >
           接受行動不便旅客搭機人數一覽表
         </RouterLink>
@@ -59,7 +59,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
           </li>
         </ol>
       </div>
-      <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2023-10-03</div>
     </div>
   </div>
 </template>

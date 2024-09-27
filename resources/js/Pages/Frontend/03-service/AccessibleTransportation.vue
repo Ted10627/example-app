@@ -19,7 +19,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <div class="flex flex-wrap w-full xl:flex-nowrap">
         <RouterLink
           :to="{ name: 'accessible-transportation' }"
-          class="w-full xl:rounded-l-[40px] shadow-xl p-2 lg:p-5 air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
+          class="w-full xl:rounded-l-[40px] shadow-xl p-2 lg:p-5 bg-air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
         >
           無障礙交通設施
         </RouterLink>
@@ -70,7 +70,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
           </p>
         </div>
       </div>
-      <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2023-11-10</div>
     </div>
   </div>
 </template>

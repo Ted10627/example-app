@@ -13,7 +13,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <mainTitle>
         <template #title>無障礙導覽說明</template>
       </mainTitle>
-      <div class="w-full bg-white py-6 px-8 rounded-xl content-text">
+      <div class="w-full bg-white py-6 px-8 rounded-xl text-2xl">
         <p>1. 本網站設計符合無障礙的標準，並提供便捷鍵（Access Key）的設定，以幫助障礙人士使用。<br>
           2. 本網站依無障礙網頁設計原則而建置，分別依網頁佈局方向來設置便捷鍵，並且該便捷鍵均可超連結至此頁完成方便瀏覽本網站的主要功能。<br>
           3. 本網站的便捷鍵（Access Key，也稱為快速鍵）設定如下：<br>
@@ -26,7 +26,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <mainTitle>
         <template #title>網站導覽</template>
       </mainTitle>
-      <div class="w-full content-text bg-white py-6 px-8 rounded-xl flex flex-wrap">
+      <div class="w-full text-2xl bg-white py-6 px-8 rounded-xl flex flex-wrap">
         <div class="w-full lg:basis-1/2">
           <div class="mb-3">
             <RouterLink :to="{ name: 'home' }" class="hover:underline underline-offset-4">1. 首頁</RouterLink>

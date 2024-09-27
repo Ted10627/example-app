@@ -1,10 +1,10 @@
-import './assets/main.css';
-import './assets/tailwind.css';
+import '../css/main.css';
+import '../css/tailwind.css';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 
 import App from './Pages/Frontend/App.vue';
-import router from '.';
+import router from './index';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 const app = createApp(App);

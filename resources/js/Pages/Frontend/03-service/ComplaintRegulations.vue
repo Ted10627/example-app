@@ -25,7 +25,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         </RouterLink>
         <RouterLink
           :to="{ name: 'complaint-regulations' }"
-          class="w-full shadow-xl p-2 lg:p-5 air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
+          class="w-full shadow-xl p-2 lg:p-5 bg-air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
         >
           作業規定
         </RouterLink>

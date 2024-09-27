@@ -19,7 +19,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <div class="flex flex-wrap w-full sm:flex-nowrap">
         <RouterLink
           :to="{ name: 'passenger-complaints' }"
-          class="w-full sm:rounded-l-[40px] shadow-xl p-2 lg:p-5 air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
+          class="w-full sm:rounded-l-[40px] shadow-xl p-2 lg:p-5 bg-air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
         >
           申請流程
         </RouterLink>

@@ -211,7 +211,7 @@ export default {
               </div>
               <div class="w-full flex-1 flex">
                 <button type="button" @click="search"
-                  class="w-full air-purple text-white px-4 py-2 hover:text-[#471C87] hover:bg-white hover:shadow-lg">
+                  class="w-full bg-air-purple text-white px-4 py-2 hover:text-[#471C87] hover:bg-white hover:shadow-lg">
                   查詢
                 </button>
               </div>
@@ -221,7 +221,7 @@ export default {
           <div class="mt-6 overflow-x-auto">
             <table class="w-full table-auto border-collapse border border-gray-200">
               <thead>
-                <tr class="air-purple">
+                <tr class="bg-air-purple">
                   <th class="border border-gray-200 px-4 py-4 text-white text-sm lg:text-xl">
                     編號
                   </th>

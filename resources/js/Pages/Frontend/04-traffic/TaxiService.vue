@@ -15,7 +15,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <div>
         <img src="/public/image/taximap.png" alt="計程車呼叫站">
       </div>
-      <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2023-11-03</div>
     </div>
   </div>
 </template>

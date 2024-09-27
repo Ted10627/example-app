@@ -230,7 +230,7 @@ const filteredFacilities = computed(() => {
   <div
     class="banner-service w-full max-w-[1920px] max-w-auto h-[120px] sm:h-[200px] lg:h-[400px] flex items-center bg-cover"
   >
-    <div class="w-[1260px] px-5 mx-auto headline-bolded-white">服務設施</div>
+    <div class="w-[1260px] px-5 mx-auto text-6xl text-bold text-[#ffffff]">服務設施</div>
   </div>
   <div class="w-full px-5">
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-12 m-auto py-10">
@@ -242,7 +242,7 @@ const filteredFacilities = computed(() => {
         <div class="w-full lg:w-[260px] flex flex-row lg:flex-col gap-2 sm:gap-5 lg:gap-[50px]">
           <select
             name="floor"
-            class="w-[50%] lg:w-full flex px-4 py-2 lg:px-10 lg:py-5 air-purple content-text-white"
+            class="w-[50%] lg:w-full flex px-4 py-2 lg:px-10 lg:py-5 air-purple text-white"
           >
             <option value="floor-b1">機場 B1</option>
             <option value="floor-1f" selected>機場 1F</option>
@@ -253,7 +253,7 @@ const filteredFacilities = computed(() => {
           <select
             v-model="selectedCategory"
             name="facility"
-            class="facility-select-phone w-full flex-1 px-4 py-2 lg:px-10 lg:py-5 background-light-gray content-text-black"
+            class="facility-select-phone w-full flex-1 px-4 py-2 lg:px-10 lg:py-5 bg-light-gray text-black"
           >
             <option value="全部" selected>全部</option>
             <option value="旅客諮詢">旅客諮詢櫃檯</option>
@@ -269,7 +269,7 @@ const filteredFacilities = computed(() => {
             <option value="充電服務">充電服務</option>
             <option value="其他服務">其他服務</option>
           </select>
-          <ul class="facility-select background-light-gray">
+          <ul class="facility-select bg-light-gray">
             <li
               v-for="(category, index) in [
                 '全部',
@@ -289,7 +289,7 @@ const filteredFacilities = computed(() => {
               :key="index"
               @click="selectedCategory = category"
               @keydown.enter="selectedCategory = category"
-              class="content-text-black font-medium hover:bg-white"
+              class="text-black font-medium hover:bg-white"
               :class="{ active: selectedCategory === category }"
             >
               {{ category }}
@@ -309,11 +309,11 @@ const filteredFacilities = computed(() => {
                 :style="{ backgroundImage: `url(${facility.image})` }"
               ></div>
               <div class="h-[160px] pt-5 flex flex-col content-between">
-                <div class="content-text-black font-medium">{{ facility.name }}</div>
-                <div class="notes">服務時間 {{ facility.time }}</div>
+                <div class="text-black font-medium">{{ facility.name }}</div>
+                <div class="text-xl font-normal">服務時間 {{ facility.time }}</div>
                 <div class="mt-auto flex justify-self-end">
-                  <div class="notes">位置</div>
-                  <div class="notes text-air-purple pl-5 flex">
+                  <div class="text-xl font-normal">位置</div>
+                  <div class="text-xl font-normal text-air-purple pl-5 flex">
                     <img
                       class="w-6 h-5 my-auto pr-1"
                       src="/public/icon/faciliry-card-icon.png"

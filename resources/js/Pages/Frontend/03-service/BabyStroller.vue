@@ -65,14 +65,12 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         </ol>
         <p class="text-sm lg:text-2xl">服務電話：04-26155000#4200 (1F-旅客諮詢櫃檯)</p>
         <a href="#">
-          <div class="w-fit flex items-center gap-2 air-purple p-2 text-white text-sm lg:text-2xl">
+          <div class="w-fit flex items-center gap-2 bg-air-purple p-2 text-white text-sm lg:text-2xl">
             <p class="px-4">嬰兒車即時申辦</p>
             <img class="w-6 h-6 m-auto mr-4" src="/icon/write-form.png" alt="" />
           </div>
         </a>
       </div>
-
-      <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2024-01-05</div>
     </div>
   </div>
 </template>

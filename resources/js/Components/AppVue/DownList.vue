@@ -116,9 +116,9 @@ const content = ref({
   >
     <div class="flex w-full items-center h-[36px] mb-[30px]">
       <img :src="navDown[props.downName].icon" class="w-[36px] h-[36px] mr-3" alt="icon" />
-      <div class="headline">{{ navDown[props.downName].name }}</div>
+      <div class="text-4xl text-air-blue">{{ navDown[props.downName].name }}</div>
     </div>
-    <div class="flex w-full notes">
+    <div class="flex w-full text-xl font-normal">
       <img
         :src="navDown[props.downName].img"
         class="flex w-[400px] h-[180px] 2xl:w-[555px] 2xl:h-[250px] mr-[73px]"
@@ -127,7 +127,7 @@ const content = ref({
       <div class="flex-1 h-full mr-[24px]">
         <div
           v-if="props.downName === 'down1'"
-          class="w-full content-text text-air-orange border-b-[1px] border-[#F59801] mb-5"
+          class="w-full text-2xl text-air-orange border-b-[1px] border-[#F59801] mb-5"
         >
           國際及兩岸航班
         </div>
@@ -146,7 +146,7 @@ const content = ref({
       <div class="flex-1 h-full">
         <div
           v-if="props.downName === 'down1'"
-          class="w-full content-text text-air-orange border-b-[1px] border-[#F59801] mb-5"
+          class="w-full text-2xl text-air-orange border-b-[1px] border-[#F59801] mb-5"
         >
           國內航班
         </div>

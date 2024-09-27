@@ -41,12 +41,12 @@ onMounted(() => {
     />
     <!-- 替換選單打開時的圖標 -->
     <img v-else class="w-8 h-8 sm:w-10 sm:h-10" src="/icon/ham-open-icon.png" aria-hidden="true" alt="icon" />
-    <p v-if="!isChecked" class="small-text-bold">Menu</p>
-    <p v-else class="small-text-bold text-air-orange">Menu</p>
+    <p v-if="!isChecked" class="text-base font-medium text-custom-gray">Menu</p>
+    <p v-else class="text-base font-medium text-air-orange">Menu</p>
   </label>
   <input type="checkbox" class="lg:hidden" id="switch" v-model="isChecked" />
   <!-- 選單內容 -->
-  <ul class="menu z-10 small-text-bold bg-light-gray">
+  <ul class="menu z-10 text-base font-medium text-custom-gray bg-light-gray">
     <li class="relative p-3 flex justify-end">
       <input
         class="vice-nav-search w-full pl-[20px] focus:outline-none"

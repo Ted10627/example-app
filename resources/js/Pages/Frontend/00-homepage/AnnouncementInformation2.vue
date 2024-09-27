@@ -16,7 +16,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         <RouterLink to="/announcement-information" class="flex-1 rounded-l-[40px] shadow-xl p-2 lg:p-5 white  text-xl lg:text-3xl text-[#471C87] text-center">
           <button type="button" class="policyAdvocacyButtom">最新消息</button>
         </RouterLink>
-        <button type="button" class="flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 air-purple text-xl lg:text-3xl text-[#FFFFFF]">政策宣導</button>
+        <button type="button" class="flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 bg-air-purple text-xl lg:text-3xl text-[#FFFFFF]">政策宣導</button>
 
       </div>
       <mainTitle>
@@ -32,22 +32,22 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
           </colgroup>
           <tr class="air-dark-blue h-[80px]">
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">發布日期</div>
+              <div class="flex justify-center border-r-2 text-white">發布日期</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center border-r-2 content-text-white">標題</div>
+              <div class="flex justify-center border-r-2 text-white">標題</div>
             </th>
             <th class="text-center">
-              <div class="flex justify-center content-text-white">點擊率</div>
+              <div class="flex justify-center text-white">點擊率</div>
             </th>
           </tr>
         </thead>
-        <tbody class="bg-white content-text">
+        <tbody class="bg-white text-2xl">
           <tr class="h-[80px] shadow-lg">
             <td class="text-center">
               2024-09-18
             </td>
-            <td class="px-8 py-5 content-text-bolded">
+            <td class="px-8 py-5 font-medium text-2xl text-air-blue">
               <a class="no-underline hover:underline underline-offset-4" href="https://www.tca.gov.tw/cht/index.php?code=list&flag=detail&ids=386&article_id=1639" target="_blank">臺中航空站能源政策宣示</a>
             </td>
             <td class="text-center">
@@ -58,7 +58,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
             <td class="text-center">
               2024-05-15
             </td>
-            <td class="px-8 py-5 content-text-bolded">
+            <td class="px-8 py-5 font-medium text-2xl text-air-blue">
               <a class="no-underline hover:underline underline-offset-4" href="https://www.tca.gov.tw/cht/index.php?code=list&flag=detail&ids=386&article_id=1748">與民同行</a>
             </td>
             <td class="text-center">
@@ -69,7 +69,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
             <td class="text-center">
               2024-05-07
             </td>
-            <td class="px-8 py-5 content-text-bolded">
+            <td class="px-8 py-5 font-medium text-2xl text-air-blue">
               <a class="no-underline hover:underline underline-offset-4" href="https://www.tca.gov.tw/cht/index.php?code=list&flag=detail&ids=386&article_id=1742" target="_blank">全新TAIWAN觀光品牌3.0版動畫短片</a>
             </td>
             <td class="text-center">
@@ -80,7 +80,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
             <td class="text-center">
               2024-01-03
             </td>
-            <td class="px-8 py-5 content-text-bolded">
+            <td class="px-8 py-5 font-medium text-2xl text-air-blue">
               <a class="no-underline hover:underline underline-offset-4" href="https://www.tca.gov.tw/cht/index.php?code=list&flag=detail&ids=386&article_id=1679" target="_blank">交通大建設</a>
             </td>
             <td class="text-center">
@@ -91,7 +91,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
             <td class="text-center">
               2023-09-05
             </td>
-            <td class="px-8 py-5 content-text-bolded">
+            <td class="px-8 py-5 font-medium text-2xl text-air-blue">
               <a class="no-underline hover:underline underline-offset-4" href="https://www.tca.gov.tw/cht/index.php?code=list&flag=detail&ids=386&article_id=1637" target="_blank">112年交通安全月宣導短片</a>
             </td>
             <td class="text-center">
@@ -102,7 +102,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
             <td class="text-center">
               2023-08-08
             </td>
-            <td class="px-8 py-5 content-text-bolded">
+            <td class="px-8 py-5 font-medium text-2xl text-air-blue">
               <a class="no-underline hover:underline underline-offset-4" href="https://www.tca.gov.tw/cht/index.php?code=list&flag=detail&ids=386&article_id=860" target="_blank">為維護機場地面作業安全，禁止在機場航廈內管制區、停機坪使用手機遊戲Pokemon GO （神奇寶貝），敬請見諒，謝謝您的合作。</a>
             </td>
             <td class="text-center">
@@ -112,10 +112,10 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         </tbody>
       </table>
       <div class="w-full flex justify-center">
-        <span class="content-text-bolded mr-3">上一頁</span>
-        <span class="content-text text-white bg-zinc-400 px-2 rounded mr-3">1</span>
-        <span class="content-text-bolded mr-8">下一頁</span>
-        <span class="content-text">第1/1頁</span>
+        <span class="font-medium text-2xl text-air-blue mr-3">上一頁</span>
+        <span class="text-2xl text-white bg-zinc-400 px-2 rounded mr-3">1</span>
+        <span class="font-medium text-2xl text-air-blue mr-8">下一頁</span>
+        <span class="text-2xl">第1/1頁</span>
       </div>
     </div>
   </div>

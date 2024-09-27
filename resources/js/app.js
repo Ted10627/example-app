@@ -7,7 +7,7 @@ import { createPinia } from 'pinia';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import router from './index';
 
-const appName = import.meta.env.VITE_APP_NAME || '應用名稱';
+const appName = import.meta.env.VITE_APP_NAME || '台中機場';
 const pinia = createPinia();
 
 createInertiaApp({

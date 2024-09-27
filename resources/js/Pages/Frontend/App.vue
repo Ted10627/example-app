@@ -77,7 +77,7 @@ onUnmounted(() => {
                     :to="{ name: 'announcement-information' }"
                   >
                     <img src="/icon/nav-map-bold.png" class="vice-nav-icon" alt="" />
-                    <div class="notes-bolded">公告資訊</div></RouterLink
+                    <div class="text-xl font-medium text-air-blue">公告資訊</div></RouterLink
                   >
                 </li>
                 <li
@@ -88,7 +88,7 @@ onUnmounted(() => {
                     to="/FAQ"
                   >
                     <img src="/icon/nav-question-fill.png" class="vice-nav-icon" alt="" />
-                    <div class="notes-bolded">常見問題</div></RouterLink
+                    <div class="text-xl font-medium text-air-blue">常見問題</div></RouterLink
                   >
                 </li>
                 <li
@@ -98,7 +98,7 @@ onUnmounted(() => {
                     class="flex items-center justify-center w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
                     to="sitemap"
                   >
-                    <div class="notes-bolded">網站導覽</div></RouterLink
+                    <div class="text-xl font-medium text-air-blue">網站導覽</div></RouterLink
                   >
                 </li>
               </ul>
@@ -127,9 +127,9 @@ onUnmounted(() => {
       <RouterView />
     </main>
     <footer class="w-full max-h-[915px]">
-      <div class="flex flex-col 2xl:flex-row w-full 2xl:h-[745px] h-full notes bg-white">
+      <div class="flex flex-col 2xl:flex-row w-full 2xl:h-[745px] h-full text-xl font-normal bg-white">
         <div
-          class="flex flex-wrap md:flex-nowrap gap-5 xl:gap-10 2xl:flex-col 2xl:justify-between items-end 2xl:items-start w-full 2xl:max-w-[500px] h-full rounded-br-[10rem] 2xl:rounded-tr-[250px] 2xl:rounded-br-[0px] bg-[#471c87] bg-opacity-10 px-5 lg:px-10 py-10 2xl:py-20 notes-bolded"
+          class="flex flex-wrap md:flex-nowrap gap-5 xl:gap-10 2xl:flex-col 2xl:justify-between items-end 2xl:items-start w-full 2xl:max-w-[500px] h-full rounded-br-[10rem] 2xl:rounded-tr-[250px] 2xl:rounded-br-[0px] bg-[#471c87] bg-opacity-10 px-5 lg:px-10 py-10 2xl:py-20 text-xl font-medium text-air-blue"
         >
           <img
             class="logo-big flex max-w-[22.5rem] max-h-[255px]"
@@ -168,7 +168,7 @@ onUnmounted(() => {
         <div class="footer-item flex justify-center w-full h-full bg-white px-5 py-20">
           <div class="flex w-full h-[490px] justify-around items-start">
             <div class="flex-col min-w-[160px]">
-              <div class="flex items-center content-text text-air-purple mb-[10px]">
+              <div class="flex items-center text-2xl text-air-purple mb-[10px]">
                 <img
                   class="w-[30px] h-[30px] mr-1"
                   src="/icon/foot-airplane.png"
@@ -183,7 +183,7 @@ onUnmounted(() => {
               >
             </div>
             <div class="flex-col min-w-[216px]">
-              <div class="flex items-center content-text text-air-purple mb-[10px]">
+              <div class="flex items-center text-2xl text-air-purple mb-[10px]">
                 <img
                   class="w-[30px] h-[30px] mr-1"
                   src="/icon/foot-luggage.png"
@@ -208,7 +208,7 @@ onUnmounted(() => {
               <RouterLink :to="{ name: '' }" class="flex m-2">國際線出入境虛擬導覽</RouterLink>
             </div>
             <div class="flex-col min-w-[160px]">
-              <div class="flex items-center content-text text-air-purple mb-[10px]">
+              <div class="flex items-center text-2xl text-air-purple mb-[10px]">
                 <img
                   class="w-[30px] h-[30px] mr-1"
                   src="/icon/foot-airplane.png"
@@ -233,7 +233,7 @@ onUnmounted(() => {
               <RouterLink :to="{ name: '' }" class="flex m-2">表單下載</RouterLink>
             </div>
             <div class="flex-col min-w-[150px]">
-              <div class="flex items-center content-text text-air-purple mb-[10px]">
+              <div class="flex items-center text-2xl text-air-purple mb-[10px]">
                 <img
                   class="w-[30px] h-[30px] mr-1"
                   src="/icon/foot-bus.png"
@@ -250,7 +250,7 @@ onUnmounted(() => {
               <RouterLink :to="{ name: 'sightseeing-guide' }" class="flex m-2">觀光指南</RouterLink>
             </div>
             <div class="flex-col min-w-[256px]">
-              <div class="flex items-center content-text text-air-purple mb-[10px]">
+              <div class="flex items-center text-2xl text-air-purple mb-[10px]">
                 <img
                   class="w-[30px] h-[30px] mr-1"
                   src="/icon/foot-document.png"
@@ -274,7 +274,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-      <div class="w-full min-h-[160px] bg-[#F6F6F6] notes content-center">
+      <div class="w-full min-h-[160px] bg-[#F6F6F6] text-xl font-normal content-center">
         <div class="flex-col flex justify-center w-full h-full">
           <div
             class="footer-end flex flex-col lg:flex-row gap-6 lg:gap-0 w-full bg-[#FFFFFF] lg:bg-[#F6F6F6] py-10 px-2 sm:px-4 lg:p-10 lg:py-0"

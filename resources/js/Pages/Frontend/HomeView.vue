@@ -147,7 +147,7 @@ const cards = ['card1', 'card2', 'card3'];
         <autoPlayCarousel />
         <!-- 航空資訊 -->
         <div
-          class="absolute w-full lg:max-w-[1080px] bottom-[32%] left-2/5 content-text shadow-md z-index-2 hidden lg:block"
+          class="absolute w-full lg:max-w-[1080px] bottom-[32%] left-2/5 text-2xl shadow-md z-index-2 hidden lg:block"
         >
           <liveFlightSchedule></liveFlightSchedule>
         </div>
@@ -155,12 +155,12 @@ const cards = ['card1', 'card2', 'card3'];
         <announcementTicker></announcementTicker>
         <!-- 天氣卡 -->
         <div
-          class="content-text absolute top-[22%] right-0 hidden lg:block"
+          class="text-2xl absolute top-[22%] right-0 hidden lg:block"
         >
           <table class="w-full max-w-[500px]">
             <thead class="h-[80px]">
               <tr
-                class="shadow-[-6px_5px_10px_rgba(255,255,255,0.5)] airportAuxiliaryColor-2 flex justify-center items-center rounded-time"
+                class="shadow-[-6px_5px_10px_rgba(255,255,255,0.5)] text-white bg-air-blue flex justify-center items-center rounded-time"
               >
                 <th class="text-center">
                   <div
@@ -246,7 +246,7 @@ const cards = ['card1', 'card2', 'card3'];
             class="flex flex-col h-full sm:flex-row basis-8/12 gap-10 sm:gap-0"
           >
             <div class="flex-1 sm:border-r border-black">
-              <div class="bus-list">
+              <div class="flex justify-center items-start">
                 <div class="flex flex-col justify-center">
                   <trafficButton
                     traffic-name="bus"
@@ -269,7 +269,7 @@ const cards = ['card1', 'card2', 'card3'];
             </div>
             <!-- 其他交通 -->
             <div class="flex-1">
-              <div class="bus-list">
+              <div class="flex justify-center items-start">
                 <div class="flex flex-col justify-center">
                   <trafficButton
                     traffic-name="taxi"
@@ -293,7 +293,7 @@ const cards = ['card1', 'card2', 'card3'];
           <!-- 停車場資訊 -->
           <div class="flex-1 flex justify-center mt-[20px] lg:mt-0">
             <div
-              class="flex-col w-full h-full py-[20px] px-5 2xl:px-[60px] background-light-gray rounded-[20px] text-xl md:text-2xl font-bold"
+              class="flex-col w-full h-full py-[20px] px-5 2xl:px-[60px] bg-light-gray rounded-[20px] text-xl md:text-2xl font-bold"
             >
               <div class="flex items-center w-full">
                 <div class="flex">停車場</div>

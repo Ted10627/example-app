@@ -341,42 +341,42 @@ function toggle(index) {
           <div class="w-full shadow-lg mb-3 flex flex-col lg:flex-row gap-0 bg-white">
             <!-- lg:columns-4 -->
             <div class="grow flex items-center">
-              <button class="w-full h-full flex items-center justify-center content-text-black py-4 border-r-2" type="button"
+              <button class="w-full h-full flex items-center justify-center text-black py-4 border-r-2" type="button"
                 @click="selectedCategory = '交通問題'"
                 :class="{
-                  'air-purple content-text-white': selectedCategory === '交通問題',
-                  'content-text-black': selectedCategory !== '交通問題'
+                  'bg-air-purple text-white': selectedCategory === '交通問題',
+                  'text-black': selectedCategory !== '交通問題'
                 }">
                 交通問題
               </button>
             </div>
             <div class="grow flex items-center">
-              <button class="w-full h-full flex items-center justify-center content-text-black py-4 border-r-2" type="button"
+              <button class="w-full h-full flex items-center justify-center text-black py-4 border-r-2" type="button"
                 @click="selectedCategory = '搭機及入出境相關問題'"
                 :class="{
-                  'air-purple content-text-white': selectedCategory === '搭機及入出境相關問題',
-                  'content-text-black': selectedCategory !== '搭機及入出境相關問題'
+                  'bg-air-purple text-white': selectedCategory === '搭機及入出境相關問題',
+                  'text-black': selectedCategory !== '搭機及入出境相關問題'
                 }">
                 搭機及入出境相關問題
               </button>
             </div>
             <div class="grow flex items-center">
-              <button type="button" class="w-full h-full flex items-center justify-center content-text-black py-4 border-r-2"
+              <button type="button" class="w-full h-full flex items-center justify-center text-black py-4 border-r-2"
                 @click="selectedCategory = '設施與其他服務'"
                 :class="{
-                  'air-purple content-text-white': selectedCategory === '設施與其他服務',
-                  'content-text-black': selectedCategory !== '設施與其他服務'
+                  'bg-air-purple text-white': selectedCategory === '設施與其他服務',
+                  'text-black': selectedCategory !== '設施與其他服務'
                 }"
               >設施與其他服務</button>
             </div>
             <div class="bg-white px-5 flex items-center grow py-4">
-              <input type="text" placeholder="輸入關鍵字" class="focus:outline-none w-full flex justify-between bg-slate-100 small-text pl-6 pr-5 py-2 rounded-full mr-3">
+              <input type="text" placeholder="輸入關鍵字" class="focus:outline-none w-full flex justify-between bg-slate-100 text-base pl-6 pr-5 py-2 rounded-full mr-3">
               <img class="searchicon w-[20px] h-[20px]" src="/icon/search.png" frameborder="0" alt="icon">
             </div>
 
           </div>
           <div v-for="(item, i) in formattedFaqData" :key="i">
-            <div @click="toggle(i)" @keydown.enter="toggle(i)" tabindex="0" class="question flex justify-between items-center content-text text-air-purple bg-white shadow-lg">
+            <div @click="toggle(i)" @keydown.enter="toggle(i)" tabindex="0" class="question flex justify-between items-center text-2xl text-air-purple bg-white shadow-lg">
               {{ item.question }}
               <img
                 class="arrow-icon h-[12px] w-[20px] ml-4"
@@ -386,8 +386,8 @@ function toggle(index) {
               />
             </div>
             <div v-if="item.open" class="answer">
-              <div class="notes" v-html="item.answer"></div>
-              <div class="update-date small-text-18 mt-2">文章最後更新日期：{{ item.updateDate }}</div>
+              <div class="text-xl font-normal" v-html="item.answer"></div>
+              <div class="update-date text-lg decoration-customGray mt-2">文章最後更新日期：{{ item.updateDate }}</div>
             </div>
           </div>
         </div>
@@ -406,11 +406,6 @@ function toggle(index) {
   cursor: pointer;
   padding: 18px 26px;
   background-color: white;
-
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1) inset; */
-  /* box-shadow: 0 6px 15px -5px rgba(0, 0, 0, 0.1) inset; */
-  /* border-bottom: 1px solid lightgray; */
 }
 .question:hover {
   background-color: rgb(248, 248, 248);

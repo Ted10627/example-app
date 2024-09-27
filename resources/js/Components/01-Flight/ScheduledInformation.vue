@@ -239,8 +239,8 @@ const hoverDeparture = ref(false);
       <button
         type="button"
         @click="setType('Arrival')"
-        :class="[nowType === 'Arrival' ? 'airportMainColor' : 'bg-white']"
-        class="mr-[5px] lg:mr-0 airportMainColor-hover duration-300 w-full h-full"
+        :class="[nowType === 'Arrival' ? 'text-white bg-air-purple' : 'bg-white']"
+        class="mr-[5px] lg:mr-0 hover:text-white hover:bg-air-purple duration-300 w-full h-full"
         @mouseover="hoverArrival = true"
         @mouseleave="hoverArrival = false"
         @focus="hoverArrival = true"
@@ -264,8 +264,8 @@ const hoverDeparture = ref(false);
       <button
         type="button"
         @click="setType('Departure')"
-        :class="[nowType === 'Departure' ? 'airportMainColor' : 'bg-white']"
-        class="airportMainColor-hover duration-300 w-full h-full"
+        :class="[nowType === 'Departure' ? 'text-white bg-air-purple' : 'bg-white']"
+        class="hover:text-white hover:bg-air-purple duration-300 w-full h-full"
         @mouseover="hoverDeparture = true"
         @mouseleave="hoverDeparture = false"
         @focus="hoverDeparture = true"
@@ -344,7 +344,7 @@ const hoverDeparture = ref(false);
         </div>
         <button
           type="button"
-          class="flex-1 flex h-full justify-center items-center active:bg-[#f59801] airportMainColor"
+          class="flex-1 flex h-full justify-center items-center active:bg-[#f59801] text-white bg-air-purple"
           @click="searchFlights"
         >
           <img class="w-[16px] h-[16px] mr-[5px]" src="/icon/tabler-search.png" alt="" />
@@ -359,7 +359,7 @@ const hoverDeparture = ref(false);
           <div class="absolute top-0 left-0 w-full h-full">
             <table class="w-full">
               <thead class="h-[65px] bg-[#343557]">
-                <tr class="airportAuxiliaryColor-2">
+                <tr class="text-white bg-air-blue">
                   <th class="text-center lg:w-[15%]">
                     <div class="flex justify-center items-center border-r-2">航空公司</div>
                   </th>
@@ -391,7 +391,7 @@ const hoverDeparture = ref(false);
               </thead>
             </table>
           </div>
-          <tr class="airportAuxiliaryColor-2">
+          <tr class="text-white bg-air-blue">
             <th class="text-center lg:w-[15%]">
               <div class="flex justify-center items-center border-r-2">航空公司</div>
             </th>
@@ -423,7 +423,7 @@ const hoverDeparture = ref(false);
         </thead>
         <tbody class="bg-white">
           <tr v-if="filterFlights.length === 0">
-            <td colspan="12" class="text-center md:subtitle py-4 bg-slate-200">查無資料</td>
+            <td colspan="12" class="text-center md:text-3xl py-4 bg-slate-200">查無資料</td>
           </tr>
           <tr
             v-for="flightItem in filterFlights.slice(0, 9)"
