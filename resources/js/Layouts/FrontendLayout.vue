@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { RouterLink, RouterView } from 'vue-router';
 import navButton from '@/Components/AppVue/NavButton.vue';
 import languageSelection from '@/Components/AppVue/LanguageSelection.vue';
 import HamButton from '@/Components/AppVue/HamButton.vue';
@@ -74,33 +73,34 @@ onUnmounted(() => {
                   <li
                     class="flex items-center vice-nav-button hover:border-b-2 hover:border-[#343557]"
                   >
-                    <RouterLink
+                    <Link
                       class="flex items-center justify-center w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
-                      :to="{ name: 'announcement-information' }"
+                      :href="route('homepage.announcement-information1')"
                     >
                       <img src="/icon/nav-map-bold.png" class="vice-nav-icon" alt="" />
-                      <div class="text-xl font-medium text-air-blue">公告資訊</div></RouterLink
-                    >
+                      <div class="text-xl font-medium text-air-blue">公告資訊</div>
+                    </Link>
                   </li>
                   <li
                     class="flex items-center vice-nav-button hover:border-b-2 hover:border-[#343557]"
                   >
-                    <RouterLink
+                    <Link
                       class="flex items-center justify-center w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
-                      to="/FAQ"
+                      :href="route('homepage.fqa')"
                     >
                       <img src="/icon/nav-question-fill.png" class="vice-nav-icon" alt="" />
-                      <div class="text-xl font-medium text-air-blue">常見問題</div></RouterLink
-                    >
+                      <div class="text-xl font-medium text-air-blue">常見問題</div>
+                    </Link>
                   </li>
                   <li
                     class="flex items-center vice-nav-button hover:border-b-2 hover:border-[#343557]"
                   >
-                    <RouterLink
+                    <Link
                       class="flex items-center justify-center w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
-                      to="sitemap"
+                      :href="route('homepage.sitemap')"
                     >
-                      <div class="text-xl font-medium text-air-blue">網站導覽</div></RouterLink
+                      <div class="text-xl font-medium text-air-blue">網站導覽</div>
+                    </Link
                     >
                   </li>
                 </ul>

@@ -2,6 +2,7 @@
 import 'animate.css';
 import { ref } from 'vue';
 import mainTitle from '@/Components/HomeView/MainTitle.vue';
+import { Link } from '@inertiajs/vue3';
 
 const imageVisible = ref(false);
 
@@ -24,11 +25,11 @@ function hideImage() {
   <div class="px-5">
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-8 m-auto py-10">
       <div class="text-sm lg:text-xl">
-        <Link href="/" class="hover:underline">首頁</Link>
+        <Link :href="route('home')" class="hover:underline">首頁</Link>
         <span> > </span>
-        <Link href="" class="hover:underline">搭機指南</Link>
+        <Link :href="route('')" class="hover:underline">搭機指南</Link>
         <span> > </span>
-        <Link href="" class="hover:underline">外國旅客購物退稅須知</Link>
+        <Link :href="route('')" class="hover:underline">外國旅客購物退稅須知</Link>
       </div>
       <mainTitle>
         <template #title>外國旅客購物退稅須知</template>
@@ -48,8 +49,8 @@ function hideImage() {
           <p class="text-xl lg:text-2xl font-bold text-air-purple">> 申請退稅地點</p>
           <div class="flex items-center">
             <img class="w-7 h-7 mr-2" src="/icon/foot-map-pin.png" alt="地圖icon" />
-            <a @click.prevent="showImage" href="#" class="text-sm lg:text-xl text-air-purple hover:text-[#f59801]"
-            >國際航廈1樓之海關「外籍旅客退稅服務台」</a
+            <Link @click.prevent="showImage" :href="route('')" class="text-sm lg:text-xl text-air-purple hover:text-[#f59801]"
+            >國際航廈1樓之海關「外籍旅客退稅服務台」</Link
             >
           </div>
           <div class="flex items-center">

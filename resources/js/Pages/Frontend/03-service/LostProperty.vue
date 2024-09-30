@@ -185,11 +185,11 @@ export default {
   <div class="px-5">
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-12 m-auto py-10">
       <div class="text-sm lg:text-xl">
-        <RouterLink to="/" class="hover:underline">首頁</RouterLink>
+        <Link :href="route('home')" class="hover:underline">首頁</Link>:href="route('')"
         <span> > </span>
-        <RouterLink to="" class="hover:underline">機場服務</RouterLink>
+        <Link :href="route('')" class="hover:underline">機場服務</Link>:href="route('')"
         <span> > </span>
-        <RouterLink to="" class="hover:underline">遺失物查詢</RouterLink>
+        <Link :href="route('')" class="hover:underline">遺失物查詢</Link>:href="route('')"
       </div>
       <mainTitle>
         <template #title>遺失物查詢</template>
@@ -278,12 +278,12 @@ export default {
         <p>航空警察局高雄分局臺中分駐站聯絡電話：(04)-26155001</p>
         <p>
           航空警察局高雄分局臺中分駐站遺失物查詢網址：
-          <a href="#" class="text-[#471C87]">https://op2.npa.gov.tw/NM107-512Client/OP010A10_Q1.jsp</a>
+          <Link :href="route('#')" class="text-[#471C87]">https://op2.npa.gov.tw/NM107-512Client/OP010A10_Q1.jsp</Link>
         </p>
         <p>財政部關務署臺中關聯絡電話：(04)-26155172</p>
         <p>
           財政部關務署臺中關網址為：
-          <a href="#" class="text-[#471C87]">https://taichung.customs.gov.tw</a>
+          <Link :href="route('#')" class="text-[#471C87]">https://taichung.customs.gov.tw</Link>
         </p>
       </div>
       <div class="w-full text-sm lg:text-2xl">文章最後更新日期：2024-06-14</div>

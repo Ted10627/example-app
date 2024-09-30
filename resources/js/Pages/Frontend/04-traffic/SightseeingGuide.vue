@@ -15,12 +15,12 @@
         >
           中臺灣觀光自由行
         </button>
-        <RouterLink
-          to="#"
+        <Link
+          :href="route('')"
           class="flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 white text-xl lg:text-3xl text-[#471C87] text-center"
         >
           <button type="button">自行車休閒路線</button>
-        </RouterLink>
+        </Link>
       </div>
       <div class="w-full flex gap-3 flex-wrap text-sm lg:text-2xl justify-center">
         <a href="https://travel.taichung.gov.tw/" target="_blank" class="shadow-lg px-5 py-2 text-white bg-air-orange hover:bg-gray-400 rounded-md">台中市觀光旅遊</a>

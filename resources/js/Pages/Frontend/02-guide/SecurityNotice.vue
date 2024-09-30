@@ -1,5 +1,6 @@
 <script setup>
 import mainTitle from '@/Components/HomeView/MainTitle.vue';
+import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -13,11 +14,11 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
   <div class="px-5">
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-8 m-auto py-10">
       <div class="text-sm lg:text-xl">
-        <Link href="/" class="hover:underline">首頁</Link>
+        <Link :href="route('home')" class="hover:underline">首頁</Link>
         <span> > </span>
-        <Link href="" class="hover:underline">搭機指南</Link>
+        <Link :href="route('')" class="hover:underline">搭機指南</Link>
         <span> > </span>
-        <Link href="" class="hover:underline">搭機安全須知</Link>
+        <Link :href="route('')" class="hover:underline">搭機安全須知</Link>
       </div>
       <mainTitle>
         <template #title>搭機安全須知</template>
@@ -64,10 +65,10 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       </div>
       <ol class="list-decimal decoration-solid px-5">
         <p class="text-xl lg:text-2xl">附件下載</p>
-        <li><a href="#" class="text-sm lg:text-xl hover:underline">旅客攜帶打火機限制</a></li>
-        <li><a href="#" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施</a></li>
-        <li><a href="#" class="text-sm lg:text-xl hover:underline">鋰電池上機規定</a></li>
-        <li><a href="#" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施問答集(點選開啟相關檔案)</a></li>
+        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">旅客攜帶打火機限制</Link></li>
+        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施</Link></li>
+        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">鋰電池上機規定</Link></li>
+        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施問答集(點選開啟相關檔案)</Link></li>
       </ol>
     </div>
   </div>

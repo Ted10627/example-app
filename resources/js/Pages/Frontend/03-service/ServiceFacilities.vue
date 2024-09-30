@@ -11,7 +11,7 @@ const facilities = ref([
     phone: '',
     location: '航廈一樓',
     image: '/image/facility/information.jpg',
-    link: 'facility-information',
+    link: 'service.facility-information',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const facilities = ref([
     phone: '服務電話 04-26155127',
     location: '航廈二樓',
     image: '/image/facility/bank.jpg',
-    link: 'financial-service',
+    link: 'service.financial-service',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const facilities = ref([
     phone: '服務電話 04-26155127',
     location: '入境行李提領區',
     image: '/image/facility/ATM.luggage.jpg',
-    link: 'financial-service',
+    link: 'service.financial-service',
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const facilities = ref([
     phone: '服務電話 04-26155127',
     location: '國內線大廳',
     image: '/image/facility/bank.jpg',
-    link: 'financial-service',
+    link: 'service.financial-service',
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const facilities = ref([
     phone: '服務電話 04-26155127',
     location: '國際線一樓',
     image: '/image/facility/ATM.luggage.jpg',
-    link: 'financial-service',
+    link: 'service.financial-service',
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const facilities = ref([
     phone: '服務電話 04-26155127',
     location: '國內線一樓大廳',
     image: '/image/facility/ATM.1F.jpg',
-    link: 'financial-service',
+    link: 'service.financial-service',
   },
   {
     id: 7,
@@ -71,7 +71,7 @@ const facilities = ref([
     phone: '服務電話 04-26155052',
     location: '國際線一樓',
     image: '/image/facility/Insurance.jpg',
-    link: 'insurance-service',
+    link: 'service.insurance-service',
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const facilities = ref([
     phone: '服務電話 04-26155100',
     location: '國際線一樓',
     image: '/image/facility/telecom.jpg',
-    link: 'telecommunication-network',
+    link: 'service.telecommunication-network',
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ const facilities = ref([
     phone: '服務電話 04-26155233',
     location: '國際線一樓',
     image: '/image/facility/car.rental.jpg',
-    link: 'cars-rental-service',
+    link: 'service.cars-rental-service',
   },
   {
     id: 10,
@@ -101,7 +101,7 @@ const facilities = ref([
     phone: '服務電話 04-26155233',
     location: '國際線一樓',
     image: '/image/facility/luggage.packing.jpg',
-    link: 'baggage-packing',
+    link: 'service.baggage-packing',
   },
   {
     id: 11,
@@ -111,7 +111,7 @@ const facilities = ref([
     phone: '服務電話 04-26155233',
     location: '國際線一樓',
     image: '/image/facility/locker.jpg',
-    link: 'storage-services',
+    link: 'service.storage-services',
   },
   {
     id: 12,
@@ -121,7 +121,7 @@ const facilities = ref([
     phone: '',
     location: '國際線一樓中央處',
     image: '/image/facility/Family.jpg',
-    link: 'food-stores',
+    link: 'service.food-stores',
   },
   {
     id: 13,
@@ -131,7 +131,7 @@ const facilities = ref([
     phone: '',
     location: '國際線一樓',
     image: '/image/facility/homeeKITCHEN.jpg',
-    link: 'food-stores',
+    link: 'service.food-stores',
   },
   {
     id: 14,
@@ -141,7 +141,7 @@ const facilities = ref([
     phone: '',
     location: '國內線離站安檢門',
     image: '/image/facility/hilife.png',
-    link: 'food-stores',
+    link: 'service.food-stores',
   },
   {
     id: 15,
@@ -151,7 +151,7 @@ const facilities = ref([
     phone: '服務電話 04-26155199',
     location: '航廈一樓',
     image: '/image/facility/nursing.jpg',
-    link: 'medical-service',
+    link: 'service.medical-service',
   },
   {
     id: 16,
@@ -161,7 +161,7 @@ const facilities = ref([
     phone: '服務電話 04-26155029',
     location: '入境大廳',
     image: '/image/facility/travel.jpg',
-    link: 'tourist-counter',
+    link: 'service.tourist-counter',
   },
   {
     id: 17,
@@ -171,7 +171,7 @@ const facilities = ref([
     phone: '',
     location: '國際線一樓',
     image: '/image/facility/mazu.jpg',
-    link: 'food-stores',
+    link: 'service.food-stores',
   },
   {
     id: 18,
@@ -181,7 +181,7 @@ const facilities = ref([
     phone: '服務電話 點入查看',
     location: '航廈一樓',
     image: '/image/facility/quarantine.jpg',
-    link: '#',
+    link: 'service.#',
   },
   {
     id: 19,
@@ -191,7 +191,7 @@ const facilities = ref([
     phone: '服務電話 點入查看',
     location: '航廈一樓',
     image: '/image/facility/tax.jpg',
-    link: '#',
+    link: 'service.#',
   },
   {
     id: 20,
@@ -201,7 +201,7 @@ const facilities = ref([
     phone: '',
     location: '航廈一樓及三樓',
     image: '/image/facility/Charge.jpg',
-    link: '#',
+    link: 'service.#',
   },
   {
     id: 21,
@@ -211,7 +211,7 @@ const facilities = ref([
     phone: '服務電話 04-23692401',
     location: '航廈入境大廳',
     image: '/image/facility/food.inspection.jpg',
-    link: '#',
+    link: 'service.#',
   },
 ]);
 
@@ -298,10 +298,10 @@ const filteredFacilities = computed(() => {
         </div>
         <!-- 設施卡片 -->
         <div class="card-height grow flex-row grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-          <RouterLink
+          <Link
             v-for="facility in filteredFacilities"
             :key="facility.id"
-            :to="`/service-facilities/${facility.link}`"
+            :href="route(facility.link)"
           >
             <div class="grow h-fit white rounded-[20px] p-5 cursor-pointer">
               <div
@@ -324,7 +324,7 @@ const filteredFacilities = computed(() => {
                 </div>
               </div>
             </div>
-          </RouterLink>
+          </Link>
         </div>
       </section>
     </div>

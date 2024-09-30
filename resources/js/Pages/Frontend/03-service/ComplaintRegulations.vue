@@ -17,36 +17,36 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       </div>
 
       <div class="flex flex-wrap w-full sm:flex-nowrap">
-        <RouterLink
-          :to="{ name: 'passenger-complaints' }"
+        <Link
+          :href="route('service.passenger-complaints')"
           class="w-full sm:rounded-l-[40px] shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           申請流程
-        </RouterLink>
-        <RouterLink
-          :to="{ name: 'complaint-regulations' }"
+        </Link>
+        <Link
+          :href="route('service.complaint-regulations')"
           class="w-full shadow-xl p-2 lg:p-5 bg-air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
         >
           作業規定
-        </RouterLink>
-        <RouterLink
-          :to="{ name: '' }"
+        </Link>
+        <Link
+          :href="route('')"
           class="w-full shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           主任信箱
-        </RouterLink>
-        <RouterLink
-          :to="{ name: '' }"
+        </Link>
+        <Link
+          :href="route('')"
           class="w-full shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           與民有約
-        </RouterLink>
-        <RouterLink
-          :to="{ name: '' }"
+        </Link>
+        <Link
+          :href="route('')"
           class="w-full sm:rounded-r-[40px] shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           旅客建議回覆
-        </RouterLink>
+        </Link>
       </div>
       <mainTitle>
         <template #title>作業規定</template>

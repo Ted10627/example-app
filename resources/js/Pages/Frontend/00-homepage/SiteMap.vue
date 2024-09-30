@@ -29,57 +29,57 @@ import { Link } from '@inertiajs/vue3';
       <div class="w-full text-2xl bg-white py-6 px-8 rounded-xl flex flex-wrap">
         <div class="w-full lg:basis-1/2">
           <div class="mb-3">
-            <Link href="/" class="hover:underline underline-offset-4">1. 首頁</Link>
+            <Link :href="route('home')" class="hover:underline underline-offset-4">1. 首頁</Link>
             <div class="pl-5">
-              <Link href="/announcement-information" class="hover:underline underline-offset-4">1-1. 公告資訊</Link><br>
-              <Link href="/FAQ" class="hover:underline underline-offset-4">1-2. 常見問題</Link><br>
+              <Link :href="route('homepage.announcement-information1')" class="hover:underline underline-offset-4">1-1. 公告資訊</Link><br>
+              <Link :href="route('homepage.faq')" class="hover:underline underline-offset-4">1-2. 常見問題</Link><br>
             </div>
           </div>
           <div class="mb-3">
-            <Link href="/InternationalFlights">2. 航班資訊</Link>
+            <Link :href="route('flight.international-flights')">2. 航班資訊</Link>
             <div class="pl-5">
-              <Link href="/announcement-information" class="hover:underline underline-offset-4">2-1. 即時航班</Link><br>
-              <Link href="/DomesticFlights" class="hover:underline underline-offset-4">2-2. 定期航班</Link><br>
-              <Link href="/airline" class="hover:underline underline-offset-4">2-3. 航空公司</Link><br>
-              <Link href="/Flight-standby-information" class="hover:underline underline-offset-4">2-4. 國內線候補資訊</Link>
+              <Link :href="route('homepage.announcement-information1')" class="hover:underline underline-offset-4">2-1. 即時航班</Link><br>
+              <Link :href="route('flight.domestic-flights')" class="hover:underline underline-offset-4">2-2. 定期航班</Link><br>
+              <Link :href="route('flight.airline')" class="hover:underline underline-offset-4">2-3. 航空公司</Link><br>
+              <Link :href="route('flight.standby-information')" class="hover:underline underline-offset-4">2-4. 國內線候補資訊</Link>
             </div>
           </div>
           <div class="mb-3">
             <a>3. 搭機指南</a>
             <div class="pl-5">
-              <Link href="/" class="hover:underline underline-offset-4">3-1. 國際線搭機流程</Link><br>
-              <Link href="/check-in" class="hover:underline underline-offset-4">3-2. 報到及通關</Link><br>
-              <Link href="/security-notice" class="hover:underline underline-offset-4">3-3. 搭機安全須知</Link><br>
-              <Link href="/concession-ticket" class="hover:underline underline-offset-4">3-4. 票價優惠說明</Link><br>
-              <Link href="/relevant-regulation" class="hover:underline underline-offset-4">3-5. 注意事項</Link><br>
-              <Link href="/tax-refund" class="hover:underline underline-offset-4">3-6. 外籍旅客購物退稅須知</Link>
+              <Link :href="route('home')" class="hover:underline underline-offset-4">3-1. 國際線搭機流程</Link><br>
+              <Link :href="route('guide.check-in')" class="hover:underline underline-offset-4">3-2. 報到及通關</Link><br>
+              <Link :href="route('guide.security-notice')" class="hover:underline underline-offset-4">3-3. 搭機安全須知</Link><br>
+              <Link :href="route('guide.concession-ticket')" class="hover:underline underline-offset-4">3-4. 票價優惠說明</Link><br>
+              <Link :href="route('guide.relevant-regulation')" class="hover:underline underline-offset-4">3-5. 注意事項</Link><br>
+              <Link :href="route('guide.tax-refund')" class="hover:underline underline-offset-4">3-6. 外籍旅客購物退稅須知</Link>
             </div>
           </div>
           <div class="mb-3">
-            <a href="#">4. 機場服務</a>
+            <a :href="route('#')">4. 機場服務</a>
             <div class="pl-5">
-              <Link href="/floor-plan/1f" class="hover:underline underline-offset-4">4-1. 機場導覽圖</Link><br>
-              <Link href="/service-facilities" class="hover:underline underline-offset-4">4-2. 服務設施</Link>
+              <Link :href="route('service.floor-plan')" class="hover:underline underline-offset-4">4-1. 機場導覽圖</Link><br>
+              <Link :href="route('service.facilities')" class="hover:underline underline-offset-4">4-2. 服務設施</Link>
               <div>
-                <Link href="/service-facilities" class="hover:underline underline-offset-4">4-2-1. 全部</Link><br>
-                <Link href="/service-facilities/facility-information" class="hover:underline underline-offset-4">4-2-2. 旅客諮詢櫃檯</Link><br>
-                <Link href="/financial-service" class="hover:underline underline-offset-4">4-2-3. 金融服務</Link><br>
-                <Link href="/insurance-service" class="hover:underline underline-offset-4">4-2-4. 保險服務</Link><br>
-                <Link href="/telecommunication-network" class="hover:underline underline-offset-4">4-2-5. 電信網路</Link><br>
-                <Link href="/cars-rental-service" class="hover:underline underline-offset-4">4-2-6. 租車服務</Link><br>
-                <Link href="/food-stores" class="hover:underline underline-offset-4">4-2-7. 購物及餐廳</Link><br>
-                <Link href="/tourist-counter" class="hover:underline underline-offset-4">4-2-8. 旅遊服務中心</Link><br>
-                <Link href="/baggage-packing" class="hover:underline underline-offset-4">4-2-9. 行李打包服務</Link><br>
-                <Link href="/storage-services" class="hover:underline underline-offset-4">4-2-10. 投幣式儲物櫃</Link><br>
-                <Link href="/medical-service" class="hover:underline underline-offset-4">4-2-11. 護理服務</Link><br>
+                <Link :href="route('service.facilities')" class="hover:underline underline-offset-4">4-2-1. 全部</Link><br>
+                <Link :href="route('service.facility-information')" class="hover:underline underline-offset-4">4-2-2. 旅客諮詢櫃檯</Link><br>
+                <Link :href="route('service.financial-service')" class="hover:underline underline-offset-4">4-2-3. 金融服務</Link><br>
+                <Link :href="route('service.insurance-service')" class="hover:underline underline-offset-4">4-2-4. 保險服務</Link><br>
+                <Link :href="route('service.telecommunication-network')" class="hover:underline underline-offset-4">4-2-5. 電信網路</Link><br>
+                <Link :href="route('service.cars-rental-service')" class="hover:underline underline-offset-4">4-2-6. 租車服務</Link><br>
+                <Link :href="route('service.food-stores')" class="hover:underline underline-offset-4">4-2-7. 購物及餐廳</Link><br>
+                <Link :href="route('service.tourist-counter')" class="hover:underline underline-offset-4">4-2-8. 旅遊服務中心</Link><br>
+                <Link :href="route('service.baggage-packing')" class="hover:underline underline-offset-4">4-2-9. 行李打包服務</Link><br>
+                <Link :href="route('service.storage-services')" class="hover:underline underline-offset-4">4-2-10. 投幣式儲物櫃</Link><br>
+                <Link :href="route('service.medical-service')" class="hover:underline underline-offset-4">4-2-11. 護理服務</Link><br>
                 <Link class="hover:underline underline-offset-4">4-2-12. 充電服務</Link><br>
                 <Link class="hover:underline underline-offset-4">4-2-13. 其他服務</Link>
               </div>
-              <Link href="/accessible-service" class="hover:underline underline-offset-4">4-3. 無障礙服務</Link><br>
-              <Link href="/baby-stroller" class="hover:underline underline-offset-4">4-4. 嬰兒車借用</Link><br>
-              <Link href="/lost-property" class="hover:underline underline-offset-4">4-5. 遺失物查詢</Link><br>
+              <Link :href="route('service.accessible-service')" class="hover:underline underline-offset-4">4-3. 無障礙服務</Link><br>
+              <Link :href="route('service.baby-stroller')" class="hover:underline underline-offset-4">4-4. 嬰兒車借用</Link><br>
+              <Link :href="route('service.lost-property')" class="hover:underline underline-offset-4">4-5. 遺失物查詢</Link><br>
               <Link class="hover:underline underline-offset-4">4-6. 服務電話</Link><br>
-              <Link href="/passenger-complaints" class="hover:underline underline-offset-4">4-7. 旅客申訴</Link><br>
+              <Link :href="route('service.passenger-complaints')" class="hover:underline underline-offset-4">4-7. 旅客申訴</Link><br>
               <Link class="hover:underline underline-offset-4">4-8. 線上問卷與建議</Link><br>
               <Link class="hover:underline underline-offset-4">4-9. 線上申辦</Link><br>
               <Link class="hover:underline underline-offset-4">4-10. 表單下載</Link>
@@ -88,14 +88,14 @@ import { Link } from '@inertiajs/vue3';
         </div>
         <div class="w-full lg:basis-1/2">
           <div class="mb-3">
-            <a href="#">5. 交通．停車</a>
+            <a :href="route('#')">5. 交通．停車</a>
             <div class="pl-5">
-              <Link href="/google-map" class="hover:underline underline-offset-4">5-1. 機場 Google Map</Link><br>
-              <Link href="/parking-lot" class="hover:underline underline-offset-4">5-2. 停車資訊</Link><br>
-              <Link href="/taxi-service" class="hover:underline underline-offset-4">5-3. 計程車服務</Link><br>
-              <Link href="/car-rental-service" class="hover:underline underline-offset-4">5-4. 租車服務</Link><br>
-              <Link href="/bus-information" class="hover:underline underline-offset-4">5-5. 公車資訊</Link><br>
-              <Link href="/sightseeing-guide" class="hover:underline underline-offset-4">5-7. 觀光指南</Link>
+              <Link :href="route('traffic.google-map')" class="hover:underline underline-offset-4">5-1. 機場 Google Map</Link><br>
+              <Link :href="route('traffic.parking-lot')" class="hover:underline underline-offset-4">5-2. 停車資訊</Link><br>
+              <Link :href="route('traffic.taxi-service')" class="hover:underline underline-offset-4">5-3. 計程車服務</Link><br>
+              <Link :href="route('traffic.car-rental-service')" class="hover:underline underline-offset-4">5-4. 租車服務</Link><br>
+              <Link :href="route('traffic.bus-information')" class="hover:underline underline-offset-4">5-5. 公車資訊</Link><br>
+              <Link :href="route('traffic.sightseeing-guide')" class="hover:underline underline-offset-4">5-7. 觀光指南</Link>
             </div>
           </div>
           <div class="mb-3">

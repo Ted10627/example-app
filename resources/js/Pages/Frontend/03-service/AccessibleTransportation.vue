@@ -17,24 +17,24 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         <template #title>無障礙交通設施</template>
       </mainTitle>
       <div class="flex flex-wrap w-full xl:flex-nowrap">
-        <RouterLink
-          :to="{ name: 'accessible-transportation' }"
+        <Link
+          :href="route('service.accessible-transportation')"
           class="w-full xl:rounded-l-[40px] shadow-xl p-2 lg:p-5 bg-air-purple text-xs md:text-base lg:text-2xl text-[#FFFFFF] text-center"
         >
           無障礙交通設施
-        </RouterLink>
-        <RouterLink
-          :to="{ name: 'accessible-service' }"
+        </Link>
+        <Link
+          :href="route('service.accessible-service')"
           class="w-full shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           無障礙服務設施
-        </RouterLink>
-        <RouterLink
-          :to="{ name: 'accessible-passengers' }"
+        </Link>
+        <Link
+          :href="route('service.accessible-passengers')"
           class="w-full xl:rounded-r-[40px] shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           接受行動不便旅客搭機人數一覽表
-        </RouterLink>
+        </Link>
       </div>
       <div class="w-full flex flex-col lg:flex-row gap-5 lg:gap-10 p-10 white rounded-[20px]">
         <div class="">

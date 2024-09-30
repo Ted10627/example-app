@@ -71,35 +71,35 @@ onMounted(() => {
       </li>
       <ul class="sub-dropdown-menu">
         <li class="p-3 bg-gray text-air-purple">國際及兩岸航班</li>
-        <RouterLink to="InternationalFlights"
+        <Link :href="route('flight.international-flights')"
         ><li>即時航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>定期航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="airline"
+        </Link>
+        <Link :href="route('flight.airline')"
         ><li>航空公司</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
+        </Link>
         <li class="p-3 bg-gray text-air-purple">國內航班</li>
-        <RouterLink to="DomesticFlights"
+        <Link :href="route('flight.domestic-flights')"
         ><li>即時航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>定期航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="airline"
+        </Link>
+        <Link :href="route('flight.airline')"
         ><li>航空公司</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="Flight-standby-information"
+        </Link>
+        <Link :href="route('flight.standby-information')"
         ><li>國內線候補資訊</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
+        </Link>
       </ul>
     </label>
     <input type="checkbox" id="guide-btn-switch" class="chevron-switch" hidden />
@@ -110,38 +110,38 @@ onMounted(() => {
         <img class="delete-icon" src="/icon/iwwa_delete.png" alt="" />
       </li>
       <ul class="sub-dropdown-menu">
-        <RouterLink to="flight-process"
+        <Link :href="route('guide.flight-process')"
         ><li>搭機流程</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="check-in"
+        </Link>
+        <Link :href="route('guide.check-in')"
         ><li>報到及通關</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="security-notice"
+        </Link>
+        <Link :href="route('guide.security-notice')"
         ><li>搭機安全須知</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="concession-ticket"
+        </Link>
+        <Link :href="route('guide.concession-ticket')"
         ><li>票價優惠說明</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="relevant-regulation"
+        </Link>
+        <Link :href="route('guide.relevant-regulation')"
         ><li>注意事項</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="tax-refund"
+        </Link>
+        <Link :href="route('guide.tax-refund')"
         ><li>外籍旅客購物退稅須知</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>來往兩岸港澳地區須知</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>國際線出入境虛擬導覽</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
+        </Link>
       </ul>
     </label>
     <input type="checkbox" id="serve-btn-switch" class="chevron-switch" hidden />
@@ -152,42 +152,42 @@ onMounted(() => {
         <img class="delete-icon" src="/icon/iwwa_delete.png" alt="" />
       </li>
       <ul class="sub-dropdown-menu">
-        <RouterLink to="floor-plan/1f"
+        <Link :href="route('service.floor-plan')"
         ><li>機場導覽圖</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="service-facilities"
+        </Link>
+        <Link :href="route('service.facilities')"
         ><li>服務設施</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="accessible-service/transportation"
+        </Link>
+        <Link :href="route('service.accessible-transportation')"
         ><li>無障礙服務</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="baby-stroller"
+        </Link>
+        <Link :href="route('service.baby-stroller')"
         ><li>嬰兒車借用</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="lost-property"
+        </Link>
+        <Link :href="route('service.lost-property')"
         ><li>遺失物查詢</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>服務電話</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="passenger-complaints"
+        </Link>
+        <Link :href="route('service.passenger-complaints')"
         ><li>旅客申訴專區</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>線上申辦</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>表單下載</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
+        </Link>
       </ul>
     </label>
     <input type="checkbox" id="tran-btn-switch" class="chevron-switch" hidden />
@@ -198,30 +198,30 @@ onMounted(() => {
         <img class="delete-icon" src="/icon/iwwa_delete.png" alt="" />
       </li>
       <ul class="sub-dropdown-menu">
-        <RouterLink to="google-map"
+        <Link :href="route('traffic.google-map')"
         ><li>機場位置</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="parking-lot"
+        </Link>
+        <Link :href="route('traffic.parking-lot')"
         ><li>停車資訊</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="taxi-service"
+        </Link>
+        <Link :href="route('traffic.taxi-service')"
         ><li>計程車服務</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="car-rental-service"
+        </Link>
+        <Link :href="route('traffic.car-rental-service')"
         ><li>租車服務</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="bus-information"
+        </Link>
+        <Link :href="route('traffic.bus-information')"
         ><li>公車資訊</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to="sightseeing-guide"
+        </Link>
+        <Link :href="route('traffic.sightseeing-guide')"
         ><li>觀光指南</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
+        </Link>
       </ul>
     </label>
     <input type="checkbox" id="tran-btn-switch" class="chevron-switch" hidden />
@@ -232,61 +232,61 @@ onMounted(() => {
         <img class="delete-icon" src="/icon/iwwa_delete.png" alt="" />
       </li>
       <ul class="sub-dropdown-menu">
-        <RouterLink to=""
+        <Link :href="route('')"
         ><li>機場簡介</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>機場景點與公共藝術</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>國際貨運資訊</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>開放資料專區</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>政府資訊公開</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>相關作業規定</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>飛安宣導專區</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>遙控無人機飛行指南</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>噪音補償</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>人事園地</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>SMS安全管理系統</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
-        <RouterLink to=""
+        </Link>
+        <Link :href="route('')"
         ><li>場內駕駛許可證題庫與教材</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
-        </RouterLink>
+        </Link>
       </ul>
     </label>
     <li class="menu-btn flex h-20">
-      <RouterLink to="announcement-information">
-        <img src="/icon/mdi_announcement.png" alt="icon" />公告資訊</RouterLink
+      <Link :href="route('homepage.announcement-information1')">
+        <img src="/icon/mdi_announcement.png" alt="icon" />公告資訊</Link
       >
-      <RouterLink to="FAQ"> <img src="/icon/ri_question-fill.png" alt="icon" />常見問題</RouterLink>
+      <Link :href="route('homepage.faq')"> <img src="/icon/ri_question-fill.png" alt="icon" />常見問題</Link>
     </li>
   </ul>
 </template>

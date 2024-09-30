@@ -10,11 +10,11 @@
   <div class="px-5">
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-12 m-auto py-10">
       <div class="text-sm lg:text-xl">
-        <Link href="/" class="hover:underline">首頁</Link>
+        <Link :href="route('home')" class="hover:underline">首頁</Link>
         <span> > </span>
-        <Link href="" class="hover:underline">搭機指南</Link>
+        <Link :href="route('')" class="hover:underline">搭機指南</Link>
         <span> > </span>
-        <Link href="" class="hover:underline">注意事項</Link>
+        <Link :href="route('')" class="hover:underline">注意事項</Link>
       </div>
       <div class="flex flex-wrap w-full sm:flex-nowrap">
         <a onclick="document.getElementById('first').scrollIntoView({ behavior: 'smooth' });"

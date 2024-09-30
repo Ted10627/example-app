@@ -13,7 +13,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
     </div>
     <div class="w-full max-w-[1260px] flex flex-col gap-5 lg:gap-12 m-auto pb-10">
       <div class="flex w-full">
-        <Link href="/announcement1" class="flex-1 rounded-l-[40px] shadow-xl p-2 lg:p-5 white  text-xl lg:text-3xl text-[#471C87] text-center">
+        <Link :href="route('homepage.announcement-information1')" class="flex-1 rounded-l-[40px] shadow-xl p-2 lg:p-5 white  text-xl lg:text-3xl text-[#471C87] text-center">
           <button type="button" class="policyAdvocacyButtom">最新消息</button>
         </Link>
         <button type="button" class="flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 bg-air-purple text-xl lg:text-3xl text-[#FFFFFF]">政策宣導</button>
