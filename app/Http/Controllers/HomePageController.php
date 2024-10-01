@@ -22,7 +22,7 @@ class HomePageController extends Controller
         return Inertia::render('Frontend/00-homepage/SiteMap', []);
     }
 
-    public function FAQ()
+    public function faq()
     {
         return Inertia::render('Frontend/00-homepage/FAQ', []);
     }

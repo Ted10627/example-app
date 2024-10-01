@@ -30,15 +30,15 @@ onUnmounted(() => {
   <li
     class="z-30 flex justify-end h-[35px] dropdown-language hover:border-b-2 hover:border-[#343557]"
   >
-    <RouterLink
+    <Link
       @click.prevent="toggleMenu"
       class="flex items-center justify-center w-full py-2"
-      to=""
+      :href="route('')"
     >
       <img src="/icon/nav-earth-48-filled.png" class="mr-[5px]" alt="icon" />
       <div class="text-xl font-medium text-air-blue">Language</div>
       <img src="/icon/park-down.png" alt="" class="w-[22px] h-[22px]" />
-    </RouterLink>
+    </Link>
     <ul v-if="isOpen" class="absolute top-6 left-0 w-full mt-2 bg-white shadow-lg dropdown-list">
       <li>
         <button

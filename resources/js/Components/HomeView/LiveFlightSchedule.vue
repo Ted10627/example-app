@@ -139,8 +139,8 @@ const setDisplayType = () => {
 // 依 category 屬性改變更多航班連結
 const flightLink = computed(() => {
   return category.value === 'international'
-    ? '/InternationalFlights'
-    : '/DomesticFlights';
+    ? 'flight.international-flights'
+    : 'flight.domestic-flights';
 });
 
 // 時間過濾航班
@@ -503,8 +503,8 @@ const hoverSearch = ref(false);
       <div
         class="flex justify-center items-center shadow-md bg-light-gray lg:bg-white lg:bg-opacity-60 h-[40px] sm:h-[60px] lg:h-[80px]"
       >
-        <RouterLink
-          :to="flightLink"
+        <Link
+          :href="route(flightLink)"
           class="flex items-center h-[40px] transition-all duration-100 hover:border-b-2 hover:border-black hover:mb-[-2px]"
         >顯示更多航班
           <img
@@ -512,7 +512,7 @@ const hoverSearch = ref(false);
             src="/icon/park-right.png"
             alt=""
           />
-        </RouterLink>
+        </Link>
       </div>
     </div>
   </div>

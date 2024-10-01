@@ -11,31 +11,31 @@ const traffic = ref({
   bus: {
     icon: '/icon/bxs-bus.png',
     name: '公車路線',
-    to: '/bus-information',
+    to: 'traffic.bus-information',
     hover: '/icon/hover-bus.png',
   },
   taxi: {
     icon: '/icon/taxi.png',
     name: '計程車服務',
-    to: '/taxi-service',
+    to: 'traffic.taxi-service',
     hover: '/icon/hover-taxi.png',
   },
   car: {
     icon: '/icon/car.png',
     name: '租車服務',
-    to: '/car-rental-service',
+    to: 'traffic.car-rental-service',
     hover: '/icon/hover-car.png',
   },
   pin: {
     icon: '/icon/map-pin-fill.png',
     name: '機場位置',
-    to: '/google-map',
+    to: 'traffic.google-map',
     hover: '/icon/hover-map-pin.png',
   },
   map: {
     icon: '/icon/map-bold.png',
     name: '觀光指南',
-    to: '/sightseeing-guide',
+    to: 'traffic.sightseeing-guide',
     hover: '/icon/hover-map-bold.png',
   },
   default: {
@@ -49,14 +49,14 @@ const hover = ref(false);
 </script>
 
 <template>
-  <router-link
+  <Link
     @mouseover="hover = true"
     @mouseleave="hover = false"
     @mousedown="hover = true"
     @mouseup="hover = false"
     @focus="hover = true"
     @blur="hover = false"
-    :to="traffic[props.trafficName].to"
+    :href="route(traffic[props.trafficName].to)"
   >
     <div
       class="flex w-[280px] h-[44px] md:h-[50px] rounded-full justify-between items-center bg-white hover:bg-[#f59801] hover:text-white"
@@ -89,7 +89,7 @@ const hover = ref(false);
         />
       </slot>
     </div>
-  </router-link>
+  </Link>
 </template>
 
 <style scoped></style>

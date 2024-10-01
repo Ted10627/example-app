@@ -44,51 +44,51 @@ const navDown = ref({
 
 const content = ref({
   down1_1: [
-    { text: '即時航班', href: '/InternationalFlights' },
-    { text: '定期航班', href: '/InternationalScheduled' },
-    { text: '航空公司', href: '/airline' },
+    { text: '即時航班', href: 'flight.international-flights' },
+    { text: '定期航班', href: 'flight.international-scheduled' },
+    { text: '航空公司', href: 'flight.airline' },
   ],
   down1_2: [
-    { text: '即時航班', href: '/DomesticFlights' },
-    { text: '定期航班', href: '/DomesticScheduled' },
-    { text: '航空公司', href: '/airline' },
-    { text: '國內線候補資訊', href: '/Flight-standby-information' },
+    { text: '即時航班', href: 'flight.domestic-flights' },
+    { text: '定期航班', href: 'flight.domestic-scheduled' },
+    { text: '航空公司', href: 'flight.airline' },
+    { text: '國內線候補資訊', href: 'flight.standby-information' },
   ],
   down2_1: [
-    { text: '搭機流程', href: '/flight-process' },
-    { text: '報到及通關', href: '/check-in' },
-    { text: '搭機安全須知', href: '/security-notice' },
-    { text: '票價優惠說明', href: '/concession-ticket' },
+    { text: '搭機流程', href: 'guide.flight-process' },
+    { text: '報到及通關', href: 'guide.check-in' },
+    { text: '搭機安全須知', href: 'guide.security-notice' },
+    { text: '票價優惠說明', href: 'guide.concession-ticket' },
   ],
   down2_2: [
-    { text: '注意事項', href: '/relevant-regulation' },
-    { text: '外籍旅客購物退稅須知', href: '/tax-refund' },
+    { text: '注意事項', href: 'guide.relevant-regulation' },
+    { text: '外籍旅客購物退稅須知', href: 'guide.tax-refund' },
     { text: '來往兩岸港澳地區須知', href: '' },
     { text: '國際線出入境虛擬導覽', href: '' },
   ],
   down3_1: [
-    { text: '機場導覽圖', href: '/floor-plan/1f' },
-    { text: '服務設施', href: '/service-facilities' },
-    { text: '無障礙服務', href: '/accessible-service/transportation' },
-    { text: '嬰兒車借用', href: '/baby-stroller' },
-    { text: '遺失物查詢', href: '/lost-property' },
+    { text: '機場導覽圖', href: 'service.floor-plan' },
+    { text: '服務設施', href: 'service.facilities' },
+    { text: '無障礙服務', href: 'service.accessible-service' },
+    { text: '嬰兒車借用', href: 'service.baby-stroller' },
+    { text: '遺失物查詢', href: 'service.lost-property' },
   ],
   down3_2: [
     { text: '服務電話', href: '' },
-    { text: '旅客申訴專區', href: '/passenger-complaints' },
+    { text: '旅客申訴專區', href: 'service.passenger-complaints' },
     { text: '線上問卷與建議', href: '' },
     { text: '線上申辦', href: '' },
     { text: '表單下載', href: '' },
   ],
   down4_1: [
-    { text: '機場位置', href: '/google-map' },
-    { text: '停車資訊', href: '/parking-lot' },
-    { text: '計程車服務', href: '/taxi-service' },
+    { text: '機場位置', href: 'traffic.google-map' },
+    { text: '停車資訊', href: 'traffic.parking-lot' },
+    { text: '計程車服務', href: 'traffic.taxi-service' },
   ],
   down4_2: [
-    { text: '租車服務', href: '/car-rental-service' },
-    { text: '公車資訊', href: '/bus-information' },
-    { text: '觀光指南', href: '/sightseeing-guide' },
+    { text: '租車服務', href: 'traffic.car-rental-service' },
+    { text: '公車資訊', href: 'traffic.bus-information' },
+    { text: '觀光指南', href: 'traffic.sightseeing-guide' },
   ],
   down5_1: [
     { text: '機場簡介', href: '' },
@@ -132,15 +132,15 @@ const content = ref({
           國際及兩岸航班
         </div>
         <div v-if="content[`${props.downName}_1`]">
-          <router-link
+          <Link
             v-for="(item, index) in content[`${props.downName}_1`]"
             :key="index"
-            :to="item.href"
+            :href="route(item.href)"
             class="flex items-center py-[5px] downlist-button"
           >
             <img class="flex w-[20px] h-[20px]" src="/icon/black-park-right.png" alt="arrow" />
             <div class="flex w-full">{{ item.text }}</div>
-          </router-link>
+          </Link>
         </div>
       </div>
       <div class="flex-1 h-full">
@@ -151,15 +151,15 @@ const content = ref({
           國內航班
         </div>
         <div v-if="content[`${props.downName}_2`]">
-          <router-link
+          <Link
             v-for="(item, index) in content[`${props.downName}_2`]"
             :key="index"
-            :to="item.href"
+            :href="route(item.href)"
             class="flex items-center py-[5px] downlist-button"
           >
             <img class="flex w-[20px] h-[20px]" src="/icon/black-park-right.png" alt="arrow" />
             <div class="flex w-full">{{ item.text }}</div>
-          </router-link>
+          </Link>
         </div>
       </div>
     </div>

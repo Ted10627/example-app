@@ -11,32 +11,32 @@ const service = ref({
   s1: {
     name: '電信服務',
     icon: '/icon/wifi.png',
-    to: '/service-facilities/telecommunication-network',
+    to: 'service.telecommunication-network',
   },
   s2: {
     name: '旅客諮詢櫃檯',
     icon: '/icon/serve-question.png',
-    to: '/service-facilities/facility-information',
+    to: 'service.facility-information',
   },
   s3: {
     name: '無障礙服務',
     icon: '/icon/accessibility.png',
-    to: '/accessible-service/transportation',
+    to: 'service.accessible-service',
   },
   s4: {
     name: '金融服務',
     icon: '/icon/money-dollar.png',
-    to: '/service-facilities/financial-service',
+    to: 'service.financial-service',
   },
   s5: {
     name: '購物及餐廳',
     icon: '/icon/fluent-food.png',
-    to: '/service-facilities/food-stores',
+    to: 'service.food-stores',
   },
   s6: {
     name: '行李打包服務',
     icon: '/icon/serve-luggage.png',
-    to: '/service-facilities/baggage-packing',
+    to: 'service.baggage-packing',
   },
   default: {
     name: '---',
@@ -52,9 +52,9 @@ const hover = ref(false);
 </script>
 
 <template>
-  <router-link
+  <Link
     class="hover:bg-[#E1E1E1] flex justify-between items-center w-full lg:h-[70px] border-b-[2px] border-[#4C4E93] px-[10px]"
-    :to="now_service.to"
+    :href="route(now_service.to)"
     @mouseover="hover = true"
     @mouseleave="hover = false"
     @focus="hover = true"
@@ -83,7 +83,7 @@ const hover = ref(false);
         alt="服務icon"
       />
     </div>
-  </router-link>
+  </Link>
 </template>
 
 <style></style>

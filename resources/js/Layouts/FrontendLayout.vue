@@ -50,12 +50,12 @@ onUnmounted(() => {
           class="fixed z-30 flex justify-between items-center bg-white border-gray-200 w-screen h-16 md:h-[100px] lg:h-[165px] lg:p-4"
         >
           <div class="flex justify-between items-center w-full max-w-[1736px] mx-auto">
-            <RouterLink
-              to="/"
+            <Link
+              :href="route('')"
               class="flex items-center w-[170px] md:w-[240px] xl:w-[300px] 2xl:w-[390px] h-[145px] ml-4 object-cover"
             >
               <img src="/logo.png" alt="Flowbite Logo" />
-            </RouterLink>
+            </Link>
             <div class="lg:mr-2  h-full items-center lg:pt-[30px]">
               <nav class="h-[40px] justify-end items-center hidden lg:block">
                 <ul
@@ -86,7 +86,7 @@ onUnmounted(() => {
                   >
                     <Link
                       class="flex items-center justify-center w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
-                      :href="route('homepage.fqa')"
+                      :href="route('homepage.faq')"
                     >
                       <img src="/icon/nav-question-fill.png" class="vice-nav-icon" alt="" />
                       <div class="text-xl font-medium text-air-blue">常見問題</div>
@@ -178,11 +178,11 @@ onUnmounted(() => {
                     alt="footicon"
                   />航班資訊
                 </div>
-                <RouterLink :to="{ name: '' }" class="flex m-2">即時航班</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">定期航班</RouterLink>
-                <RouterLink :to="{ name: 'airline' }" class="flex m-2">航空公司</RouterLink>
-                <RouterLink :to="{ name: 'Flight-standby-information' }" class="flex m-2"
-                >國內線候補資訊</RouterLink
+                <Link :href="route('')" class="flex m-2">即時航班</Link>
+                <Link :href="route('')" class="flex m-2">定期航班</Link>
+                <Link :href="route('flight.airline')" class="flex m-2">航空公司</Link>
+                <Link :href="route('flight.standby-information')" class="flex m-2"
+                >國內線候補資訊</Link
                 >
               </div>
               <div class="flex-col min-w-[216px]">
@@ -193,22 +193,22 @@ onUnmounted(() => {
                     alt="footicon"
                   />搭機指南
                 </div>
-                <RouterLink :to="{ name: 'flight-process' }" class="flex m-2">搭機流程</RouterLink>
-                <RouterLink :to="{ name: 'check-in' }" class="flex m-2">報到及通關</RouterLink>
-                <RouterLink :to="{ name: 'security-notice' }" class="flex m-2"
-                >搭機安全須知</RouterLink
+                <Link :href="route('guide.flight-process')" class="flex m-2">搭機流程</Link>
+                <Link :href="route('guide.check-in')" class="flex m-2">報到及通關</Link>
+                <Link :href="route('guide.security-notice')" class="flex m-2"
+                >搭機安全須知</Link
                 >
-                <RouterLink :to="{ name: 'concession-ticket' }" class="flex m-2"
-                >票價優惠說明</RouterLink
+                <Link :href="route('guide.concession-ticket')" class="flex m-2"
+                >票價優惠說明</Link
                 >
-                <RouterLink :to="{ name: 'relevant-regulation' }" class="flex m-2"
-                >注意事項</RouterLink
+                <Link :href="route('guide.relevant-regulation')" class="flex m-2"
+                >注意事項</Link
                 >
-                <RouterLink :to="{ name: 'tax-refund' }" class="flex m-2"
-                >外籍旅客購物退稅須知</RouterLink
+                <Link :href="route('guide.tax-refund')" class="flex m-2"
+                >外籍旅客購物退稅須知</Link
                 >
-                <RouterLink :to="{ name: '' }" class="flex m-2">來往兩岸港澳地區須知</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">國際線出入境虛擬導覽</RouterLink>
+                <Link :href="route('')" class="flex m-2">來往兩岸港澳地區須知</Link>
+                <Link :href="route('')" class="flex m-2">國際線出入境虛擬導覽</Link>
               </div>
               <div class="flex-col min-w-[160px]">
                 <div class="flex items-center text-2xl text-air-purple mb-[10px]">
@@ -218,22 +218,22 @@ onUnmounted(() => {
                     alt="footicon"
                   />機場服務
                 </div>
-                <RouterLink :to="{ name: 'floor-plan-1f' }" class="flex m-2">機場導覽圖</RouterLink>
-                <RouterLink :to="{ name: 'service-facilities' }" class="flex m-2"
-                >服務設施</RouterLink
+                <Link :href="route('service.floor-plan')" class="flex m-2">機場導覽圖</Link>
+                <Link :href="route('service.facilities')" class="flex m-2"
+                >服務設施</Link
                 >
-                <RouterLink :to="{ name: 'accessible-transportation' }" class="flex m-2"
-                >無障礙服務</RouterLink
+                <Link :href="route('service.accessible-transportation')" class="flex m-2"
+                >無障礙服務</Link
                 >
-                <RouterLink :to="{ name: 'baby-stroller' }" class="flex m-2">嬰兒車借用</RouterLink>
-                <RouterLink :to="{ name: 'lost-property' }" class="flex m-2">遺失物查詢</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">服務電話</RouterLink>
-                <RouterLink :to="{ name: 'passenger-complaints' }" class="flex m-2"
-                >旅客申訴</RouterLink
+                <Link :href="route('service.baby-stroller')" class="flex m-2">嬰兒車借用</Link>
+                <Link :href="route('service.lost-property')" class="flex m-2">遺失物查詢</Link>
+                <Link :href="route('')" class="flex m-2">服務電話</Link>
+                <Link :href="route('service.passenger-complaints')" class="flex m-2"
+                >旅客申訴</Link
                 >
-                <RouterLink :to="{ name: '' }" class="flex m-2">線上問卷與建議</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">線上申辦</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">表單下載</RouterLink>
+                <Link :href="route('')" class="flex m-2">線上問卷與建議</Link>
+                <Link :href="route('')" class="flex m-2">線上申辦</Link>
+                <Link :href="route('')" class="flex m-2">表單下載</Link>
               </div>
               <div class="flex-col min-w-[150px]">
                 <div class="flex items-center text-2xl text-air-purple mb-[10px]">
@@ -243,14 +243,14 @@ onUnmounted(() => {
                     alt="footicon"
                   />機場交通
                 </div>
-                <RouterLink :to="{ name: 'google-map' }" class="flex m-2">機場位置</RouterLink>
-                <RouterLink :to="{ name: 'parking-lot' }" class="flex m-2">停車資訊</RouterLink>
-                <RouterLink :to="{ name: 'taxi-service' }" class="flex m-2">計程車服務</RouterLink>
-                <RouterLink :to="{ name: 'car-rental-service' }" class="flex m-2"
-                >租車服務</RouterLink
+                <Link :href="route('traffic.google-map')" class="flex m-2">機場位置</Link>
+                <Link :href="route('traffic.parking-lot')" class="flex m-2">停車資訊</Link>
+                <Link :href="route('traffic.taxi-service')" class="flex m-2">計程車服務</Link>
+                <Link :href="route('traffic.car-rental-service')" class="flex m-2"
+                >租車服務</Link
                 >
-                <RouterLink :to="{ name: 'bus-information' }" class="flex m-2">公車資訊</RouterLink>
-                <RouterLink :to="{ name: 'sightseeing-guide' }" class="flex m-2">觀光指南</RouterLink>
+                <Link :href="route('traffic.bus-information')" class="flex m-2">公車資訊</Link>
+                <Link :href="route('traffic.sightseeing-guide')" class="flex m-2">觀光指南</Link>
               </div>
               <div class="flex-col min-w-[256px]">
                 <div class="flex items-center text-2xl text-air-purple mb-[10px]">
@@ -260,19 +260,19 @@ onUnmounted(() => {
                     alt="footicon"
                   />行政專區
                 </div>
-                <RouterLink :to="{ name: '' }" class="flex m-2">機場簡介</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">機場景點與公共藝術</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">國際貨運資訊</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">開放資料專區</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">政府資訊公開</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">相關作業規定</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">飛安宣導專區</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">遙控無人機飛行指南</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">噪音補償</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">政風園地</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">人事園地</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">SMS安全管理系統</RouterLink>
-                <RouterLink :to="{ name: '' }" class="flex m-2">場內駕駛許可證題庫與教材</RouterLink>
+                <Link :href="route('')" class="flex m-2">機場簡介</Link>
+                <Link :href="route('')" class="flex m-2">機場景點與公共藝術</Link>
+                <Link :href="route('')" class="flex m-2">國際貨運資訊</Link>
+                <Link :href="route('')" class="flex m-2">開放資料專區</Link>
+                <Link :href="route('')" class="flex m-2">政府資訊公開</Link>
+                <Link :href="route('')" class="flex m-2">相關作業規定</Link>
+                <Link :href="route('')" class="flex m-2">飛安宣導專區</Link>
+                <Link :href="route('')" class="flex m-2">遙控無人機飛行指南</Link>
+                <Link :href="route('')" class="flex m-2">噪音補償</Link>
+                <Link :href="route('')" class="flex m-2">政風園地</Link>
+                <Link :href="route('')" class="flex m-2">人事園地</Link>
+                <Link :href="route('')" class="flex m-2">SMS安全管理系統</Link>
+                <Link :href="route('')" class="flex m-2">場內駕駛許可證題庫與教材</Link>
               </div>
             </div>
           </div>

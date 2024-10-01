@@ -1,6 +1,5 @@
 <script setup>
 import { reactive, ref } from 'vue';
-import { RouterLink } from 'vue-router';
 
 const props = defineProps({
   guideName: {
@@ -16,8 +15,8 @@ const guide = reactive({
     content1: '搭機報到手續',
     content2: '搭機出示證明文件',
     content3: '出境流程',
-    to1: '/check-in',
-    to2: '/check-in',
+    to1: 'guide.check-in',
+    to2: 'guide.check-in',
     to3: '/',
   },
   card2: {
@@ -29,7 +28,7 @@ const guide = reactive({
     content3: '如何離開機場',
     to1: '/',
     to2: '/',
-    to3: '/bus-information',
+    to3: 'traffic.bus-information',
   },
   card3: {
     img: '/image/guide-3.png',
@@ -38,8 +37,8 @@ const guide = reactive({
     content1: '搭機安全須知',
     content2: '注意事項',
     content3: '來往兩岸港澳地區須知',
-    to1: '/security-notice',
-    to2: '/relevant-regulation',
+    to1: 'guide.security-notice',
+    to2: 'guide.relevant-regulation',
     to3: '/',
   },
   undefined: {
@@ -79,7 +78,7 @@ const hover3 = ref(false);
           </div>
         </div>
         <div class="mt-3 text-sm lg:text-lg">
-          <RouterLink :to="currentGuide?.to1 || '/'">
+          <Link :href="currentGuide?.to1 ? route(currentGuide.to1) : '/'">
             <div
               class="flex items-center text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover1 = true"
@@ -99,8 +98,8 @@ const hover3 = ref(false);
                 alt=""
               />
             </div>
-          </RouterLink>
-          <RouterLink :to="currentGuide?.to2 || '/'">
+          </Link>
+          <Link :href="currentGuide?.to2 ? route(currentGuide.to2) : '/'">
             <div
               class="flex items-center mt-3 text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover2 = true"
@@ -120,8 +119,8 @@ const hover3 = ref(false);
                 alt=""
               />
             </div>
-          </RouterLink>
-          <RouterLink :to="currentGuide?.to3 || '/'">
+          </Link>
+          <Link :href="currentGuide?.to3 ? route(currentGuide.to3) : '/'">
             <div
               class="flex items-center mt-3 text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover3 = true"
@@ -141,7 +140,7 @@ const hover3 = ref(false);
                 alt=""
               />
             </div>
-          </RouterLink>
+          </Link>
         </div>
       </div>
     </div>

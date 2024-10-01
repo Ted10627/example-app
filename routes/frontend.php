@@ -16,7 +16,7 @@ Route::prefix('homepage')->group(function(){
     Route::get('/announcement-information1', [HomePageController::class, 'announcement1'])->name('homepage.announcement-information1');
     Route::get('/announcement-information2', [HomePageController::class, 'announcement2'])->name('homepage.announcement-information2');
     Route::get('/sitemap', [HomePageController::class, 'sitemap'])->name('homepage.sitemap');
-    Route::get('/fqa', [HomePageController::class, 'FAQ'])->name('homepage.faq');
+    Route::get('/faq', [HomePageController::class, 'faq'])->name('homepage.faq');
     });
 
 //01-flight
