@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\IndexController;
@@ -10,7 +11,7 @@ use App\Http\Controllers\HomePageController;
 
 // 首頁
 Route::get('/', [IndexController::class,'index'])->name('home');
-
+Route::get('/shaka',[Controller::class,'ShakaPlayer']);
 //00-homepage
 Route::prefix('homepage')->group(function(){
     Route::get('/announcement-information1', [HomePageController::class, 'announcement1'])->name('homepage.announcement-information1');
