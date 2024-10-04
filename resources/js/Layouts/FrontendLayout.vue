@@ -51,7 +51,7 @@ onUnmounted(() => {
         >
           <div class="flex justify-between items-center w-full max-w-[1736px] mx-auto">
             <Link
-              :href="route('')"
+              :href="route('home')"
               class="flex items-center w-[170px] md:w-[240px] xl:w-[300px] 2xl:w-[390px] h-[145px] ml-4 object-cover"
             >
               <img src="/logo.png" alt="Flowbite Logo" />
@@ -126,8 +126,7 @@ onUnmounted(() => {
         </div>
       </header>
       <main id="main" class="flex-grow flex flex-col items-center w-full">
-        <!-- <slot /> -->
-        <RouterView />
+        <slot />
       </main>
       <footer id="footer" class="w-full max-h-[915px]">
         <div class="flex flex-col 2xl:flex-row w-full 2xl:h-[745px] h-full text-xl font-normal bg-white">
@@ -178,8 +177,8 @@ onUnmounted(() => {
                     alt="footicon"
                   />航班資訊
                 </div>
-                <Link :href="route('')" class="flex m-2">即時航班</Link>
-                <Link :href="route('')" class="flex m-2">定期航班</Link>
+                <Link :href="route('home')" class="flex m-2">即時航班</Link>
+                <Link :href="route('home')" class="flex m-2">定期航班</Link>
                 <Link :href="route('flight.airline')" class="flex m-2">航空公司</Link>
                 <Link :href="route('flight.standby-information')" class="flex m-2"
                 >國內線候補資訊</Link
@@ -207,8 +206,8 @@ onUnmounted(() => {
                 <Link :href="route('guide.tax-refund')" class="flex m-2"
                 >外籍旅客購物退稅須知</Link
                 >
-                <Link :href="route('')" class="flex m-2">來往兩岸港澳地區須知</Link>
-                <Link :href="route('')" class="flex m-2">國際線出入境虛擬導覽</Link>
+                <Link :href="route('home')" class="flex m-2">來往兩岸港澳地區須知</Link>
+                <Link :href="route('home')" class="flex m-2">國際線出入境虛擬導覽</Link>
               </div>
               <div class="flex-col min-w-[160px]">
                 <div class="flex items-center text-2xl text-air-purple mb-[10px]">
@@ -227,13 +226,13 @@ onUnmounted(() => {
                 >
                 <Link :href="route('service.baby-stroller')" class="flex m-2">嬰兒車借用</Link>
                 <Link :href="route('service.lost-property')" class="flex m-2">遺失物查詢</Link>
-                <Link :href="route('')" class="flex m-2">服務電話</Link>
+                <Link :href="route('home')" class="flex m-2">服務電話</Link>
                 <Link :href="route('service.passenger-complaints')" class="flex m-2"
                 >旅客申訴</Link
                 >
-                <Link :href="route('')" class="flex m-2">線上問卷與建議</Link>
-                <Link :href="route('')" class="flex m-2">線上申辦</Link>
-                <Link :href="route('')" class="flex m-2">表單下載</Link>
+                <Link :href="route('home')" class="flex m-2">線上問卷與建議</Link>
+                <Link :href="route('home')" class="flex m-2">線上申辦</Link>
+                <Link :href="route('home')" class="flex m-2">表單下載</Link>
               </div>
               <div class="flex-col min-w-[150px]">
                 <div class="flex items-center text-2xl text-air-purple mb-[10px]">
@@ -260,19 +259,19 @@ onUnmounted(() => {
                     alt="footicon"
                   />行政專區
                 </div>
-                <Link :href="route('')" class="flex m-2">機場簡介</Link>
-                <Link :href="route('')" class="flex m-2">機場景點與公共藝術</Link>
-                <Link :href="route('')" class="flex m-2">國際貨運資訊</Link>
-                <Link :href="route('')" class="flex m-2">開放資料專區</Link>
-                <Link :href="route('')" class="flex m-2">政府資訊公開</Link>
-                <Link :href="route('')" class="flex m-2">相關作業規定</Link>
-                <Link :href="route('')" class="flex m-2">飛安宣導專區</Link>
-                <Link :href="route('')" class="flex m-2">遙控無人機飛行指南</Link>
-                <Link :href="route('')" class="flex m-2">噪音補償</Link>
-                <Link :href="route('')" class="flex m-2">政風園地</Link>
-                <Link :href="route('')" class="flex m-2">人事園地</Link>
-                <Link :href="route('')" class="flex m-2">SMS安全管理系統</Link>
-                <Link :href="route('')" class="flex m-2">場內駕駛許可證題庫與教材</Link>
+                <Link :href="route('home')" class="flex m-2">機場簡介</Link>
+                <Link :href="route('home')" class="flex m-2">機場景點與公共藝術</Link>
+                <Link :href="route('home')" class="flex m-2">國際貨運資訊</Link>
+                <Link :href="route('home')" class="flex m-2">開放資料專區</Link>
+                <Link :href="route('home')" class="flex m-2">政府資訊公開</Link>
+                <Link :href="route('home')" class="flex m-2">相關作業規定</Link>
+                <Link :href="route('home')" class="flex m-2">飛安宣導專區</Link>
+                <Link :href="route('home')" class="flex m-2">遙控無人機飛行指南</Link>
+                <Link :href="route('home')" class="flex m-2">噪音補償</Link>
+                <Link :href="route('home')" class="flex m-2">政風園地</Link>
+                <Link :href="route('home')" class="flex m-2">人事園地</Link>
+                <Link :href="route('home')" class="flex m-2">SMS安全管理系統</Link>
+                <Link :href="route('home')" class="flex m-2">場內駕駛許可證題庫與教材</Link>
               </div>
             </div>
           </div>

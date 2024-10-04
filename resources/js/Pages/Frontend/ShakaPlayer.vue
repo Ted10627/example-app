@@ -7,8 +7,8 @@ function jumpTo(seconds) {
 }
 
 onMounted(() => {
-  const manifestUri = '/resources/videos/ShakaPlayer.mp4';
-  const screenText = '/resources/videos/ShakaPlayer.vtt'; // 字幕檔案路徑
+  // const manifestUri = '/resources/videos/ShakaPlayer.mp4';
+  // const screenText = '/resources/videos/ShakaPlayer.vtt'; // 字幕檔案路徑
   const video = document.getElementById('video');
   const player = new shaka.Player(video);
 
@@ -26,19 +26,19 @@ onMounted(() => {
 </script>
 
 <template><div>標題</div>
-  <!-- controlsList="nodownload"禁止下載功能 -->
-  <video id="video" width="620" poster="//shaka-player-demo.appspot.com/assets/poster.jpg" controls
-    controlsList="nodownload" autoplay>
+  <!-- controlsList='nodownload'禁止下載功能 -->
+  <video id='video' width='620' poster='//shaka-player-demo.appspot.com/assets/poster.jpg' controls
+    controlsList='nodownload' autoplay>
     <!-- 動態添加track，不在此定義 -->
-    <track kind="captions" />
+    <track kind='captions' />
   </video>
   <!-- 原生跳轉 -->
-  <div id="timeline-buttons">
+  <div id='timeline-buttons'>
     <div>
-      <button type="button" class="jump-button" @click="jumpTo(20)">課程前導(0:20)</button>
+      <button type='button' class='jump-button' @click='jumpTo(20)'>課程前導(0:20)</button>
     </div>
     <div>
-      <button type="button" class="jump-button" @click="jumpTo(129)">第二堂(2:09)</button>
+      <button type='button' class='jump-button' @click='jumpTo(129)'>第二堂(2:09)</button>
     </div>
   </div>
 </template>
@@ -52,12 +52,5 @@ onMounted(() => {
 
   .jump-button:hover {
     color: blue;
-  }
-
-  .shaka-controls-container .shaka-overflow-menu {
-    top: auto;
-    /* 如果想調整清單的垂直位置，這是控制項 */
-    left: auto;
-    /* 調整清單的水平位置 */
   }
 </style>
