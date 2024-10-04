@@ -5,7 +5,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { createPinia } from 'pinia';
 import AppLayout from '@/Layouts/AppLayout.vue';
-import router from './index';
+// import router from './index';
 
 const appName = import.meta.env.VITE_APP_NAME || '台中機場';
 const pinia = createPinia();
@@ -30,7 +30,7 @@ createInertiaApp({
       .use(plugin)
       .use(pinia)
       .use(ZiggyVue, Ziggy)
-      .use(router)
+      // .use(router)
       .component('Link', Link)
       .component('Head', Head)
       .mount(el);

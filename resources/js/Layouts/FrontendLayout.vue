@@ -3,6 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import navButton from '@/Components/AppVue/NavButton.vue';
 import languageSelection from '@/Components/AppVue/LanguageSelection.vue';
 import HamButton from '@/Components/AppVue/HamButton.vue';
+import { Link } from '@inertiajs/inertia-vue3';
 
 const goTopButton = ref(null);
 
