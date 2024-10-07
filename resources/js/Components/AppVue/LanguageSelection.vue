@@ -33,7 +33,6 @@ onUnmounted(() => {
     <Link
       @click.prevent="toggleMenu"
       class="flex items-center justify-center w-full py-2"
-      :href="route('')"
     >
       <img src="/icon/nav-earth-48-filled.png" class="mr-[5px]" alt="icon" />
       <div class="text-xl font-medium text-air-blue">Language</div>

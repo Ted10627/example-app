@@ -23,7 +23,7 @@ function switchTab(tab) {
       <div class="text-sm lg:text-xl">
         <Link :href="route('home')" class="hover:underline">首頁</Link>
         <span> > </span>
-        <Link :href="route('')" class="hover:underline">搭機指南</Link>
+        <Link :href="route('guide.check-in')" class="hover:underline">搭機指南</Link>
         <span> > </span>
         <span v-if="currentTab === 'exit'">國際線搭機流程(出境)</span>
         <span v-else>國際線搭機流程(入境)</span>
@@ -66,7 +66,7 @@ function switchTab(tab) {
               </p>
             </div>
             <div>
-              <Link :href="route('#')" class="text-base lg:text-2xl text-air-purple hover:text-[#f59801]">國際線出境虛擬導覽></Link>
+              <Link class="text-base lg:text-2xl text-air-purple hover:text-[#f59801]">國際線出境虛擬導覽></Link>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ function switchTab(tab) {
               </p>
             </div>
             <div>
-              <Link :href="route('#')" class="text-base lg:text-2xl text-air-purple hover:text-[#f59801]">國際線出境虛擬導覽></Link>
+              <Link class="text-base lg:text-2xl text-air-purple hover:text-[#f59801]">國際線出境虛擬導覽></Link>
             </div>
           </div>
         </div>

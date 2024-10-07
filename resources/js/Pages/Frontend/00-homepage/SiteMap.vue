@@ -45,9 +45,9 @@ import { Link } from '@inertiajs/vue3';
             </div>
           </div>
           <div class="mb-3">
-            <a>3. 搭機指南</a>
+            <Link>3. 搭機指南</Link>
             <div class="pl-5">
-              <Link :href="route('home')" class="hover:underline underline-offset-4">3-1. 國際線搭機流程</Link><br>
+              <Link class="hover:underline underline-offset-4">3-1. 國際線搭機流程</Link><br>
               <Link :href="route('guide.check-in')" class="hover:underline underline-offset-4">3-2. 報到及通關</Link><br>
               <Link :href="route('guide.security-notice')" class="hover:underline underline-offset-4">3-3. 搭機安全須知</Link><br>
               <Link :href="route('guide.concession-ticket')" class="hover:underline underline-offset-4">3-4. 票價優惠說明</Link><br>
@@ -56,7 +56,7 @@ import { Link } from '@inertiajs/vue3';
             </div>
           </div>
           <div class="mb-3">
-            <a :href="route('#')">4. 機場服務</a>
+            <Link>4. 機場服務</Link>
             <div class="pl-5">
               <Link :href="route('service.floor-plan')" class="hover:underline underline-offset-4">4-1. 機場導覽圖</Link><br>
               <Link :href="route('service.facilities')" class="hover:underline underline-offset-4">4-2. 服務設施</Link>
@@ -88,7 +88,7 @@ import { Link } from '@inertiajs/vue3';
         </div>
         <div class="w-full lg:basis-1/2">
           <div class="mb-3">
-            <a :href="route('#')">5. 交通．停車</a>
+            <Link>5. 交通．停車</Link>
             <div class="pl-5">
               <Link :href="route('traffic.google-map')" class="hover:underline underline-offset-4">5-1. 機場 Google Map</Link><br>
               <Link :href="route('traffic.parking-lot')" class="hover:underline underline-offset-4">5-2. 停車資訊</Link><br>
@@ -99,7 +99,7 @@ import { Link } from '@inertiajs/vue3';
             </div>
           </div>
           <div class="mb-3">
-            <a href="#">6. 行政專區</a>
+            <Link>6. 行政專區</Link>
             <div class="pl-5">
               <Link class="hover:underline underline-offset-4">6-1. 機場簡介</Link><br>
               <Link class="hover:underline underline-offset-4">6-2. 機場景點與公共藝術</Link><br>

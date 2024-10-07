@@ -41,7 +41,7 @@ const traffic = ref({
   default: {
     icon: '',
     name: '',
-    to: '',
+    to: 'home',
     hover: '',
   },
 });

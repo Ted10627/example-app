@@ -30,19 +30,16 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
           作業規定
         </Link>
         <Link
-          :href="route('')"
           class="w-full shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           主任信箱
         </Link>
         <Link
-          :href="route('')"
           class="w-full shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           與民有約
         </Link>
         <Link
-          :href="route('')"
           class="w-full sm:rounded-r-[40px] shadow-xl p-2 lg:p-5 white text-xs md:text-base lg:text-2xl text-[#471C87] text-center hover:bg-[#471C87] hover:text-[#FFFFFF]"
         >
           旅客建議回覆

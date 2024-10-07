@@ -181,7 +181,7 @@ const facilities = ref([
     phone: '服務電話 點入查看',
     location: '航廈一樓',
     image: '/image/facility/quarantine.jpg',
-    link: 'service.#',
+    link: 'home',
   },
   {
     id: 19,
@@ -191,7 +191,7 @@ const facilities = ref([
     phone: '服務電話 點入查看',
     location: '航廈一樓',
     image: '/image/facility/tax.jpg',
-    link: 'service.#',
+    link: 'home',
   },
   {
     id: 20,
@@ -201,7 +201,7 @@ const facilities = ref([
     phone: '',
     location: '航廈一樓及三樓',
     image: '/image/facility/Charge.jpg',
-    link: 'service.#',
+    link: 'home',
   },
   {
     id: 21,
@@ -211,7 +211,7 @@ const facilities = ref([
     phone: '服務電話 04-23692401',
     location: '航廈入境大廳',
     image: '/image/facility/food.inspection.jpg',
-    link: 'service.#',
+    link: 'home',
   },
 ]);
 

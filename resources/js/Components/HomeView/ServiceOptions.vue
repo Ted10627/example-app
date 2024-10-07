@@ -41,7 +41,7 @@ const service = ref({
   default: {
     name: '---',
     icon: '',
-    to: '/',
+    to: 'home',
   },
 });
 

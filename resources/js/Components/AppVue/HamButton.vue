@@ -75,7 +75,7 @@ onMounted(() => {
         ><li>即時航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>定期航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
@@ -88,7 +88,7 @@ onMounted(() => {
         ><li>即時航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>定期航班</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
@@ -134,11 +134,11 @@ onMounted(() => {
         ><li>外籍旅客購物退稅須知</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>來往兩岸港澳地區須知</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>國際線出入境虛擬導覽</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
@@ -172,7 +172,7 @@ onMounted(() => {
         ><li>遺失物查詢</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>服務電話</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
@@ -180,11 +180,11 @@ onMounted(() => {
         ><li>旅客申訴專區</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>線上申辦</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>表單下載</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
@@ -232,51 +232,51 @@ onMounted(() => {
         <img class="delete-icon" src="/icon/iwwa_delete.png" alt="" />
       </li>
       <ul class="sub-dropdown-menu">
-        <Link :href="route('')"
+        <Link
         ><li>機場簡介</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>機場景點與公共藝術</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>國際貨運資訊</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>開放資料專區</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>政府資訊公開</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>相關作業規定</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>飛安宣導專區</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>遙控無人機飛行指南</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>噪音補償</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>人事園地</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>SMS安全管理系統</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>
-        <Link :href="route('')"
+        <Link
         ><li>場內駕駛許可證題庫與教材</li>
           <img src="/icon/icon-park_right_light.png" alt="" />
         </Link>

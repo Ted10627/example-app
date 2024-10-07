@@ -17,7 +17,7 @@ const guide = reactive({
     content3: '出境流程',
     to1: 'guide.check-in',
     to2: 'guide.check-in',
-    to3: '/',
+    to3: 'home',
   },
   card2: {
     img: '/image/guide-2.png',
@@ -26,8 +26,8 @@ const guide = reactive({
     content1: '入境流程',
     content2: '來往兩岸港澳地區須知',
     content3: '如何離開機場',
-    to1: '/',
-    to2: '/',
+    to1: 'home',
+    to2: 'home',
     to3: 'traffic.bus-information',
   },
   card3: {
@@ -39,7 +39,7 @@ const guide = reactive({
     content3: '來往兩岸港澳地區須知',
     to1: 'guide.security-notice',
     to2: 'guide.relevant-regulation',
-    to3: '/',
+    to3: 'home',
   },
   undefined: {
     img: '',
@@ -48,9 +48,9 @@ const guide = reactive({
     content1: '',
     content2: '',
     content3: '',
-    to1: '/',
-    to2: '/',
-    to3: '/',
+    to1: 'home',
+    to2: 'home',
+    to3: 'home',
   },
 });
 const currentGuide = guide[props.guideName] || guide.default;
@@ -78,7 +78,7 @@ const hover3 = ref(false);
           </div>
         </div>
         <div class="mt-3 text-sm lg:text-lg">
-          <Link :href="currentGuide?.to1 ? route(currentGuide.to1) : '/'">
+          <Link :href="currentGuide?.to1 ? route(currentGuide.to1) : 'home'">
             <div
               class="flex items-center text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover1 = true"
@@ -99,7 +99,7 @@ const hover3 = ref(false);
               />
             </div>
           </Link>
-          <Link :href="currentGuide?.to2 ? route(currentGuide.to2) : '/'">
+          <Link :href="currentGuide?.to2 ? route(currentGuide.to2) : 'home'">
             <div
               class="flex items-center mt-3 text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover2 = true"
@@ -120,7 +120,7 @@ const hover3 = ref(false);
               />
             </div>
           </Link>
-          <Link :href="currentGuide?.to3 ? route(currentGuide.to3) : '/'">
+          <Link :href="currentGuide?.to3 ? route(currentGuide.to3) : 'home'">
             <div
               class="flex items-center mt-3 text-[#471C87] hover:text-[#F59801]"
               @mouseover="hover3 = true"

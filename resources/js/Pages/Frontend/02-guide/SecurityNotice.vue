@@ -16,9 +16,9 @@ import { Link } from '@inertiajs/vue3';
       <div class="text-sm lg:text-xl">
         <Link :href="route('home')" class="hover:underline">首頁</Link>
         <span> > </span>
-        <Link :href="route('')" class="hover:underline">搭機指南</Link>
+        <Link class="hover:underline">搭機指南</Link>
         <span> > </span>
-        <Link :href="route('')" class="hover:underline">搭機安全須知</Link>
+        <Link class="hover:underline">搭機安全須知</Link>
       </div>
       <mainTitle>
         <template #title>搭機安全須知</template>
@@ -65,10 +65,10 @@ import { Link } from '@inertiajs/vue3';
       </div>
       <ol class="list-decimal decoration-solid px-5">
         <p class="text-xl lg:text-2xl">附件下載</p>
-        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">旅客攜帶打火機限制</Link></li>
-        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施</Link></li>
-        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">鋰電池上機規定</Link></li>
-        <li><Link :href="route('#')" class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施問答集(點選開啟相關檔案)</Link></li>
+        <li><Link class="text-sm lg:text-xl hover:underline">旅客攜帶打火機限制</Link></li>
+        <li><Link class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施</Link></li>
+        <li><Link class="text-sm lg:text-xl hover:underline">鋰電池上機規定</Link></li>
+        <li><Link class="text-sm lg:text-xl hover:underline">隨身行李安檢新措施問答集(點選開啟相關檔案)</Link></li>
       </ol>
     </div>
   </div>

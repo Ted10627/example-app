@@ -16,7 +16,6 @@
           中臺灣觀光自由行
         </button>
         <Link
-          :href="route('')"
           class="flex-1 rounded-r-[40px] shadow-xl p-2 lg:p-5 white text-xl lg:text-3xl text-[#471C87] text-center"
         >
           <button type="button">自行車休閒路線</button>
@@ -33,7 +32,7 @@
         <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0000193&id=78" target="_blank" class="shadow-lg px-5 py-2 text-white bg-air-orange hover:bg-gray-400 rounded-md">國家公園</a>
       </div>
       <div class="w-full p-10 bg-white">
-        <img class="w-full m-auto" src="/public/image/sightseeingGuide.jpg" alt="觀光指南" />
+        <img class="w-full m-auto" src="/image/sightseeingGuide.jpg" alt="觀光指南" />
       </div>
     </div>
   </div>

@@ -65,7 +65,7 @@ import { Link } from '@inertiajs/vue3';
           <li>回收單位應確實負責將嬰兒車交還至原借用處所；若有遺失應負責尋回或賠償。</li>
         </ol>
         <p class="text-sm lg:text-2xl">服務電話：04-26155000#4200 (1F-旅客諮詢櫃檯)</p>
-        <Link :href="route('')">
+        <Link>
           <div class="w-fit flex items-center gap-2 bg-air-purple p-2 text-white text-sm lg:text-2xl">
             <p class="px-4">嬰兒車即時申辦</p>
             <img class="w-6 h-6 m-auto mr-4" src="/icon/write-form.png" alt="" />

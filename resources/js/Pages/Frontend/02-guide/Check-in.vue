@@ -15,9 +15,9 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
       <div class="text-sm lg:text-xl">
         <Link :href="route('home')" class="hover:underline">首頁</Link>
         <span> > </span>
-        <Link :href="route('')" class="hover:underline">搭機指南</Link>
+        <Link class="hover:underline">搭機指南</Link>
         <span> > </span>
-        <Link :href="route('')" class="hover:underline">報到及通關</Link>
+        <Link class="hover:underline">報到及通關</Link>
       </div>
       <mainTitle>
         <template #title>報到及通關</template>
