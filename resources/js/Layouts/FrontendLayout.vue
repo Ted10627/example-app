@@ -282,22 +282,22 @@ onUnmounted(() => {
             <div
               class="footer-end flex flex-col lg:flex-row gap-6 lg:gap-0 w-full bg-[#FFFFFF] lg:bg-[#F6F6F6] py-10 px-2 sm:px-4 lg:p-10 lg:py-0"
             >
-              <a href="" class="flex items-center pr-5 h-4 lg:border-r-[1px] lg:border-black">
+              <Link :href="route('home')" class="flex items-center pr-5 h-4 lg:border-r-[1px] lg:border-black">
                 <img class="w-[20px] h-[20px] mr-2" src="/icon/park-right.png" alt="footicon" />
                 網站導覽
-              </a>
-              <a href="" class="flex items-center lg:px-5 h-4 lg:border-r-[1px] lg:border-black">
+              </Link>
+              <Link :href="route('home')" class="flex items-center lg:px-5 h-4 lg:border-r-[1px] lg:border-black">
                 <img class="w-[20px] h-[20px] mr-2" src="/icon/park-right.png" alt="footicon" />
                 網站資料開放宣告
-              </a>
-              <a href="" class="flex items-center lg:px-5 h-4 lg:border-r-[1px] lg:border-black">
+              </Link>
+              <Link :href="route('home')" class="flex items-center lg:px-5 h-4 lg:border-r-[1px] lg:border-black">
                 <img class="w-[20px] h-[20px] mr-2" src="/icon/park-right.png" alt="footicon" />
                 資訊安全政策
-              </a>
-              <a href="" class="flex items-center lg:px-5 h-4">
+              </Link>
+              <Link :href="route('home')" class="flex items-center lg:px-5 h-4">
                 <img class="w-[20px] h-[20px] mr-2" src="/icon/park-right.png" alt="footicon" />
-                隱私權保護政策</a
-              >
+                隱私權保護政策
+              </Link>
             </div>
             <div class="flex flex-col lg:flex-row justify-between w-full px-2 sm:px-4 lg:px-10">
               <div class="py-[10px] flex flex-col sm:flex-row">
