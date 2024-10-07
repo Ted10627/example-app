@@ -34,15 +34,15 @@ function hideImage() {
             <li>宅配服務</li>
           </ol>
           <div class="flex items-center">
-            <img class="w-6 h-6 mr-5" src="/icon/ion.timeclock.png" alt="" />
+            <img class="w-6 h-6 mr-5" src="/icon/ion.timeclock.png" alt="icon" />
             <p class="text-base lg:text-2xl">08:30 ~ 19:00</p>
           </div>
           <div class="flex items-center">
-            <img class="w-6 h-6 mr-5" src="/icon/foot-map-pin.png" alt="" />
+            <img class="w-6 h-6 mr-5" src="/icon/foot-map-pin.png" alt="icon" />
             <p class="text-base lg:text-2xl">國際線一樓入境大廳</p>
           </div>
           <div class="flex items-center">
-            <img class="w-6 h-6 mr-5" src="/icon/phone-solid.svg" alt="" />
+            <img class="w-6 h-6 mr-5" src="/icon/phone-solid.svg" alt="icon" />
             <p class="text-base lg:text-2xl">04-26155233</p>
           </div>
         </div>

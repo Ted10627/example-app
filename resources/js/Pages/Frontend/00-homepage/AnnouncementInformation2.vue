@@ -123,7 +123,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
 
 <style>
 .banner-service{
-  background-image: url(/public/image/banner-flight.png);
+  background-image: url(/image/banner-flight.png);
 }
 .air-dark-blue{
   background-color: #343557;

@@ -1,19 +1,11 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import { useRouter } from 'vue-router';
+import { ref } from 'vue';
 const isMenuOpen = ref(false);
+const isChecked = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
-const isChecked = ref(false);
-const router = useRouter();
-onMounted(() => {
-  router.beforeEach((to, from, next) => {
-    isChecked.value = false; // 每次路由變化時重置 checkbox 的狀態
-    next(); // 繼續導航
-  });
-});
 </script>
 
 <template>

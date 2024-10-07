@@ -76,6 +76,6 @@ import { Link } from '@inertiajs/vue3';
 
 <style>
 .banner-guide {
-  background-image: url(/public/image/banner-guide.png);
+  background-image: url(/image/banner-guide.png);
 }
 </style>

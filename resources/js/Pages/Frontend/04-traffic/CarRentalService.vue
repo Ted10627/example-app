@@ -27,7 +27,7 @@
               <p class="text-black">08:30~19:00</p>
             </div>
             <div class="flex items-center">
-              <img class="w-6 h-6 mr-5" src="/public/icon/foot-telephone.png" alt="">
+              <img class="w-6 h-6 mr-5" src="/icon/foot-telephone.png" alt="">
               <p class="text-black">04-26155233</p>
             </div>
             <div class="flex items-center">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="basis-1/2 bg-cover bg-center bg-[url(/public/image/carrent.png)]">
+        <div class="basis-1/2 bg-cover bg-center bg-[url(/image/carrent.png)]">
         </div>
       </section>
       <section>
@@ -50,7 +50,7 @@
       </section>
       <section class="w-full h-[530px] flex flex-col gap-5">
         <!-- <div class="w-auto h-full bg-cover bg-no-repeat" style="background-image: url(/image/information.map.png)"></div> -->
-        <img src="/public/image/car-rent-map.png" alt="租車地點">
+        <img src="/image/car-rent-map.png" alt="租車地點">
       </section>
     </div>
   </div>
@@ -58,6 +58,6 @@
 
 <style>
 .banner-service{
-  background-image: url(/public/image/banner-google-map.png);
+  background-image: url(/image/banner-google-map.png);
 }
 </style>

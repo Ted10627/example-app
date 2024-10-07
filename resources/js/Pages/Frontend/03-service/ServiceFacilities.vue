@@ -316,7 +316,7 @@ const filteredFacilities = computed(() => {
                   <div class="text-xl font-normal text-air-purple pl-5 flex">
                     <img
                       class="w-6 h-5 my-auto pr-1"
-                      src="/public/icon/faciliry-card-icon.png"
+                      src="/icon/faciliry-card-icon.png"
                       alt=""
                     />
                     {{ facility.location }}
@@ -333,7 +333,7 @@ const filteredFacilities = computed(() => {
 
 <style>
 .banner-service {
-  background-image: url(/public/image/banner-service.png);
+  background-image: url(/image/banner-service.png);
 }
 option {
   background-color: #ffffff;

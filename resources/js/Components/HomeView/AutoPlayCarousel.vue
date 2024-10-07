@@ -2,9 +2,9 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const items = ref([
-  { src: './image/banner-1.png', alt: '...' },
-  { src: './image/banner-2.png', alt: '...' },
-  { src: './image/banner-3.png', alt: '...' },
+  { src: '/image/banner-1.png', alt: '...' },
+  { src: '/image/banner-2.png', alt: '...' },
+  { src: '/image/banner-3.png', alt: '...' },
 ]);
 
 const currentIndex = ref(0);

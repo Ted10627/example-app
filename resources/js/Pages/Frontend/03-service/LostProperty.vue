@@ -293,7 +293,7 @@ export default {
 
 <style>
 .banner-service {
-  background-image: url(/public/image/banner-service.png);
+  background-image: url(/image/banner-service.png);
 }
 
 .form-shadow {

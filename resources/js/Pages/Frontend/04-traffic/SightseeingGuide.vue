@@ -40,6 +40,6 @@
 
 <style>
 .banner-service{
-  background-image: url(/public/image/banner-google-map.png);
+  background-image: url(/image/banner-google-map.png);
 }
 </style>

@@ -163,7 +163,7 @@
 
 <style>
 .banner-guide {
-  background-image: url(/public/image/banner-guide.png);
+  background-image: url(/image/banner-guide.png);
 }
 
 a {

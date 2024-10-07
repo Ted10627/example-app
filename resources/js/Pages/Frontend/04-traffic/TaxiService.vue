@@ -13,7 +13,7 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
         <template #title>計程車呼叫站</template>
       </mainTitle>
       <div>
-        <img src="/public/image/taximap.png" alt="計程車呼叫站">
+        <img src="/image/taximap.png" alt="計程車呼叫站">
       </div>
     </div>
   </div>
@@ -21,6 +21,6 @@ import mainTitle from '@/Components/HomeView/MainTitle.vue';
 
 <style>
 .banner-service{
-  background-image: url(/public/image/banner-google-map.png);
+  background-image: url(/image/banner-google-map.png);
 }
 </style>
