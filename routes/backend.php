@@ -9,4 +9,4 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('Backend/Dashboard');
     })->name('dashboard');
 });
-Route::get('/fetch-flights',[BackstageFlightController::class, 'fetchFlightData']);
+Route::post('/flights/data',[BackstageFlightController::class, 'fetchFlightData']);

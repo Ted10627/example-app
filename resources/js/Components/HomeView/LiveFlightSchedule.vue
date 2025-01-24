@@ -48,6 +48,10 @@ const getAPI = async () => {
 
   // 出入境放入陣列flight(所有資料)
   flight.value = { departures, arrivals };
+  console.log(flight.value.departures);
+  console.log(flight.value.arrivals);
+  // 將 localStorage 的資料傳遞到後端
+  await axios.post('/flights/data', { flight });
 };
 
 // 用來放按鈕過濾後資料的陣列

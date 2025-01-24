@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date('flight_date')->comment('航班日期');
             $table->string('flight_number', 10)->comment('航班編號');
             $table->string('airline_code', 10)->comment('航空公司代號');
-            $table->string('departureAirport_code', 10)->comment('起飛機場代號');
+            $table->string('departure_airport_code', 10)->comment('起飛機場代號');
             $table->string('arrival_airport_code', 10)->comment('抵達機場代號');
             $table->dateTime('schedule_departure_time')->comment('預計出發時間');
             $table->dateTime('actual_departure_time')->nullable()->comment('實際出發時間');
